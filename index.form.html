@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Metodo de Pago</title>
+    <!--Link a CSS-->
+    <link rel="stylesheet" href="/estilos/reset.css">
+    <link rel="stylesheet" href="/estilos/general.css">
+
+</head>
+
+<body>
+    
+    <header>
+        <div id = "titulo" >
+            <h1>Metodos de Pago</h1>
+            <h2>Tarjeta</h2>
+        </div>
+        <aside>
+            <img height="200px"   src="imagenes/moka.jpeg">
+        </aside>
+    </header> 
+
+    <div id="contenedor"> 
+        <form action="" method="">
+
+            <div class="nombre">
+                <label for="txtNombre">Nombre Completo </label>
+                <input type="text" id="txtNombre" maxlength="100" >
+            </div>
+
+            <div class="numero">
+                <label for="txtNumero">Numero de Tarjeta</label>
+                <input type="number" id="txtNumero" maxlength="100" >
+            </div>
+
+            <div class="fecha">
+                <label for="txtFecha">Fecha de Vencimiento</label>
+                <input type="number" id="txtFecha" 
+            </div>
+
+            <div class="direccion">
+                <label for="txtDireccion">Direccion</label>
+                <input type="text" id="txtDireccion" >
+            </div>
+
+            <div class="cvv">
+                <label for="txtCVV">CVV </label>
+                <input type="text" id="txtCVV" >
+            </div>
+
+        </form>
+
+        <footer>
+            <div id="imagen_pago">
+                <img height="100px"   src="imagenes/pago.jpg">
+            </div>
+            <div class="button-container">
+                <button type="button" id="btnGuardar" class="button">Guardar</button>
+                <button type="button" id="btnAtras" class="button">Volver a Perfil</button>
+            </div>  
+
+        </footer>
+                
+    </div>
+
+</body>
+
+</html>
