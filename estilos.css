@@ -1,23 +1,94 @@
-header{
-    background-color: blueviolet;
-    width: 100%;
-    height: 100;
-}
-#logo{
-
-}
-.us{
-/*     border: 1px solid rgb(204, 54, 54);
- */    width: 250px;
-
-}
-.session{
-/*     border: 1px solid rgb(204, 54, 54);
- */    width: 250px;
-
-}
+/*Colores a usar en el landing page: 
+ violeta #A000FF
+ verde cian #00FFA0 
+ amarillo #FFFF00. */
 
 
-nav{
-    border: 1px solid rgb(0, 0, 0);
+/*Estilos del header*/
+
+#mokaName {
+    
+    padding: 25px 15px 5px 15px;
+    background-color:#A000FF;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
+
+.us {
+    background-color: #A000FF;
+    overflow: hidden;
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.us a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.us a:hover { 
+    background-color: #A000FF;
+    color: #00FFA0;
+    font-size: 26px;
+    
+}
+
+.us a.session {
+    float: right;
+    margin: left 100px;
+    background-color: #A000FF;
+    font-weight: bold;
+}
+
+.us a.session:hover {
+    background-color:black;
+    color: white;
+}
+
+/* Estilos del main */
+
+main h2 {
+    padding: 25px 15px 5px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding: auto;
+}
+
+main #curri{
+    padding: 0px 15px;
+    margin-bottom: 50px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+-
+}
+
+main .mapouter{
+    float: right;
+    border: 2px solid purple;
+
+}
+
+main .logoHome{
+    border: 2px solid yellow;
+
+}
+
+main #middlePage{
+    border: 2px solid red;
+    display: inline-flex;
+    
+}
+
+main .buttonsHomePage{
+    border: 3px solid green;
+    padding: 15px;   
+    display: block;
+}
+
