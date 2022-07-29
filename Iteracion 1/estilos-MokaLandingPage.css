@@ -1,0 +1,68 @@
+/*Colores a usar en el landing page: 
+ violeta #A000FF
+ verde cian #00FFA0 
+ amarillo #FFFF00. */
+
+
+#mokaName {
+    padding: 4px 15px;
+    background-color:#A000FF;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    font-size: 45px;
+}
+
+.us {
+    background-color: #A000FF;
+    overflow: hidden;
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.us a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.us a:hover { 
+    background-color: #A000FF;
+    color: #00FFA0;
+    font-size: 26px;
+    
+}
+
+.us a.session {
+    float: right;
+    margin: left 100px;
+    background-color: #A000FF;
+    font-weight: bold;
+}
+
+.us a.session:hover {
+    background-color:black;
+    color: white;
+}
+
+main h2 {
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding: auto;
+}
+
+main #curri{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    
+
+}
