@@ -4,43 +4,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moka Landing Page</title>
-    <link rel="stylesheet" href="/estilos.css">
-    <link rel="stylesheet" href="/controlador.js">
-    <link rel="stylesheet" href="/reset.css">
-
+    <link rel="stylesheet" href="/estilos-MokaLandingPage.css">
+    <link rel="stylesheet" href="/controlador-MokaLandingPage.js">
+    <link rel="stylesheet" href="/reset-MokaLandingPage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Amatic+SC&family=Bebas+Neue&family=Montserrat:wght@300;900&family=Rampart+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
     <header>
-        <div id="logo">
+        <div id="mokaName">
             <h1> Moka Veterinaria y Hotel </h1>
         </div>
         <nav>
             <div class="us">
-                <a  href="#">Acerca de nosotros </a>
-                <a  href="#">Nuestro equipo</a>
+                <a  href="#aboutus">Acerca de nosotros </a>
+                <a  href="#ourteam">Nuestro equipo</a>
+                <a  href="#signin" class="session">Registrarse</a>
+                <a  href="#login" class="session" >Iniciar sesion</a>
             </div>
-            <div class="session"> 
-                <a  href="#">Iniciar sesion</a>
-                <a  href="#">Registrarse</a>
-            </div>
-
         </nav>
     </header>
 
-    <section>
+    <main>
         <h2> Moka Vet & Hotel </h2>
-        <p>Curridabat, Costa Rica</p>
+        <p id="curri">Curridabat, Costa Rica</p>
 
-        <div id="">
-
-        </div>
+        
         
 
         <button id="citaVete" type="button"> Cita veterinaria </button>
         <button id="reservaHotel" type="button"> Reservar en el hotel </button>
-
-    </section>
 
 
     <section id="vetes">
@@ -53,13 +48,13 @@
             <div id="imagen"></div>
             <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nostrum cupiditate nam adipisci voluptate, in inventore, excepturi distinctio ipsa error enim, eos culpa amet expedita! Facilis ex tempore quo ducimus?</p>
         </div>
-        <div class="personaje">
+        <div class="vetes">
             <div id="imagen"></div>
             <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nostrum cupiditate nam adipisci voluptate, in inventore, excepturi distinctio ipsa error enim, eos culpa amet expedita! Facilis ex tempore quo ducimus?</p>
         </div>
     </section>
   
-
+    </main>
     
 </body>
 <script src="/controlador.js"></script>
