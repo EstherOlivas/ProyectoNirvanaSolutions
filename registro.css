@@ -1,0 +1,38 @@
+body {
+    background-color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 40px;
+    left: 60px;
+    margin-bottom: 10px;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.form input{
+    width: 125%;
+}
+
+.form h4{
+    width: 125%;
+}
+
+#termsAcceptance {
+    width: 125;
+}
+
