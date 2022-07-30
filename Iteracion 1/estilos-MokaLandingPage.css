@@ -4,15 +4,18 @@
  amarillo #FFFF00. */
 
 
-#mokaName {
-    padding: 4px 15px;
+/*Estilos del header*/
+
+#mokaName{
+    
+    padding: 25px 15px 5px 15px;
     background-color:#A000FF;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
 
-h2{
+#mokaName:hover{
     font-size: 45px;
 }
 
@@ -51,8 +54,10 @@ h2{
     color: white;
 }
 
+/* Estilos del main */
+
 main h2 {
-    margin-top: 50px;
+    padding: 70px 110px 15px 110px;
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     font-weight: bold;
@@ -60,9 +65,116 @@ main h2 {
 }
 
 main #curri{
+    padding: 0px 110px;
+    margin-bottom: 20px;
     font-family: 'Alegreya Sans SC', sans-serif;
     font-size: 25px;
     font-weight: bold;
-    
+}
+
+/*Estilos del middlePage*/
+
+main .mapouter{
+    float: right;
+    margin: 20px 70px;
+
+}
+
+main #middlePage{
+    display:flex;
+    align-items: center;   
+}
+
+main .logoHome{
+    margin: 100px;
+}
+
+/****** Botones de Cita y Reserva ****/
+
+main .buttonsHomePage{
+    border: 1px solid red;
+    width: 760px;
+    height: 100px;  
+    display: flex;
+   
+}
+
+main .buttonsHomePage{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+     
+}
+
+main #citaVete {
+    border: solid 1px #00FFA0;
+    width: 250px;
+    height: 60px;
+    font-family:'Montserrat', sans-serif;
+}
+
+main #reservaHotel {
+    border: solid 1px #00FFA0;
+    width: 250px;
+    height: 60px;
+    font-family:'Montserrat', sans-serif; 
+    padding: 10px;
+    margin: 20px;
+}
+
+main #reservaHotel:hover {
+    background-color: #00FFA0;
+    color:#A000FF;
+    font-size: 18px;
+    border: #00FFA0;
+    font-weight: bold;
+}
+
+main #citaVete:hover {
+    background-color: #00FFA0;
+    color:#FFFF00;
+    font-size: 18px;
+    border: #00FFA0;
+    font-weight: bold;
+}
+
+/*Seccion de veterinarios*/
+
+
+#doctoresTitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 40px;
+}
+
+
+#vetes {
+    border:solid 2px #FFFF00;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 500px;
+    width: 1500px;
+    padding: 20px;
+   
+}
+
+main .img{
+    border: solid 2px red;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+main .desc{
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
 
 }
