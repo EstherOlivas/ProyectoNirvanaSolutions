@@ -1,0 +1,111 @@
+/* FONT TODO LE FORMULARIO */
+body{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+margin-top: 100px;
+margin-left: 140px;
+font-weight: bold;
+font-size: 50px;
+}
+img{
+    margin-right: 300px;
+}
+
+button{
+    width: 300px;
+    height: 85px;
+    border-radius: 7px;
+    font-size: 16px;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 20px;
+
+}
+button:hover{
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px solid black;
+}
+#contenedor_vista_cliente{
+    display: flex;
+    flex-direction: column;
+}
+#botones_cliente_runo{
+    display: flex;
+    justify-content: space-evenly; 
+}
+#botones_cliente_rdos{
+    display: flex;
+    justify-content: space-evenly;
+}
+#botones_cliente_rtres{
+    display: flex;
+    justify-content: space-evenly;
+}
+#botones_cliente_rcuatro{
+    display: flex;
+    justify-content: space-evenly;
+}
+#contenedor_volver{
+    margin-top: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#volver{
+    width: 135px;
+    height: 45px;
+    margin-right: 150px;
+    border: 2px solid #00FFA0;
+    color: #00FFA0;
+}
+#volver:hover{
+    border: 3px solid #00FFA0;
+
+}
+@media only screen and (max-width:650px){
+    h1{
+        font-size: 25px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+        margin-left: 120px;
+    }
+
+
+    #contenedor_vista_cliente{
+        flex-direction: column;
+        align-items: center;
+        }
+    #botones_cliente_runo{
+        flex-direction: column;
+    }
+    #botones_cliente_rdos{
+        margin-top: 1px;
+        flex-direction: column;
+    }
+    #botones_cliente_rtres{
+        margin-top: 1px;
+        flex-direction: column;
+    }
+    #botones_cliente_rcuatro{
+        margin-top: 1px;
+        flex-direction: column;
+    }
+    button{
+        margin: 10px 0;
+
+    }
+    #contenedor_volver{
+        margin-top: 20px;
+    }
+
+}
