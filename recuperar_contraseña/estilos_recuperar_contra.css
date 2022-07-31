@@ -1,0 +1,73 @@
+/* FONT TODO LA PAGINA */
+body{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+h1{
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 965px;
+
+}
+#contenedor{
+    border: 2px solid black;
+    border-radius: 7px;
+    width: 1000px;
+    height: 410px;
+}
+#contenedor_input_label{
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    margin-top: 50px;
+    width: 90%;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+label{
+    font-size: 31px;
+}
+#contenedor_botones{
+    display: flex;
+    justify-content: end;
+}
+button{
+    margin: 55px 20px;
+    font-size: 16px;
+    background-color: white;
+    width: 135px;
+    height: 45px;
+    border-radius: 7px;
+    margin-right: 10px;
+    border: 2px solid #00FFA0;
+    color: #00FFA0;
+}
+#restablecer:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #00FFA0;
+    border: 3px solid #FFFF00;
+    color:#FFFF00;
+}
+#cancelar:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #00FFA0;
+    border: 3px solid #A000FF;
+    color: #A000FF;
+}

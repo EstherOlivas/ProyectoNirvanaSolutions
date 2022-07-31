@@ -37,22 +37,11 @@ button:hover{
     display: flex;
     flex-direction: column;
 }
-#botones_cliente_runo{
+#botones_cliente_runo,#botones_cliente_rdos,#botones_cliente_rtres,#botones_cliente_rcuatro{
     display: flex;
     justify-content: space-evenly; 
 }
-#botones_cliente_rdos{
-    display: flex;
-    justify-content: space-evenly;
-}
-#botones_cliente_rtres{
-    display: flex;
-    justify-content: space-evenly;
-}
-#botones_cliente_rcuatro{
-    display: flex;
-    justify-content: space-evenly;
-}
+
 #contenedor_volver{
     margin-top: 80px;
     display: flex;
@@ -67,8 +56,11 @@ button:hover{
     color: #00FFA0;
 }
 #volver:hover{
-    border: 3px solid #00FFA0;
-
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #00FFA0;
+    border: 3px solid #A000FF;
+    color: #A000FF;
 }
 @media only screen and (max-width:650px){
     h1{
