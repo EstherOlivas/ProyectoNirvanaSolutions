@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valoraciones</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos_valoraciones.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Valoraciones de la mascota</h1>
+        <img src="imagotipo.jpeg" alt="imagotipo MOKA" width="300px">
+    </header>
+    <main>
+        <div id="contenerdor_tabla_ver">
+            <form method="post">
+            <table>
+                <tr>
+                    <th class="titulo">Usuario</th>
+                    <th class="titulo">Mascota</th>
+                    <th class="titulo" id="alineacion">Fecha</th>
+                    <th class="titulo" id="valoracion">Valoracion</th>
+                </tr>
+                <tr>
+                    <th class="usuario"><input type ="text" placeholder="Usuario" required></th>
+                    <th class="mascota"><input type ="text" placeholder="Mascota" required></th>
+                    <th class="fecha"><input type ="text" placeholder="(AAAA-MM-DD)" required></th>
+                    <th class="valoracion"><input type ="number" placeholder="(1,2,3)" required></th>
+                </tr>
+            </table>
+        </div>
+        <div id="contenedor_boton">
+            <button id="guardar" type="submit"> Guardar </button>
+        </div>
+             </form>
+    </main>
+</body>
+</html>
