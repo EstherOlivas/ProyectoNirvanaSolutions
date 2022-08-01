@@ -1,0 +1,113 @@
+/* Estilos del header */
+
+body header{
+    height: 290px;
+    font-family: 'Montserrat', sans-serif; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #A000FF;
+}
+
+#pageTittle{
+    height: 100px;
+    width: 800px;
+    margin: 60px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+img{
+    margin-right: 100px;
+}
+
+/* Estilos de la tabla */
+
+#contenerdorTabla{
+    border: green 5px solid;
+    font-family: 'Montserrat', sans-serif; 
+    display: flex;
+    justify-content: center;
+    width: 1300px;
+    height: auto;
+    margin-left: 80px;
+}
+
+td{
+    height: 50px; 
+   text-align: left;
+   align-content: space-between;
+}
+
+
+tr{
+    align-self: center;
+}
+
+table{
+    text-align: left;
+}
+
+
+.titulo{
+    background: lightgrey;
+    width: 1300px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 8px; 
+}
+
+.data{
+    background: lightgreen;
+}
+
+
+/* Estilos de los botones */
+
+#contenedor_boton{
+    font-family: 'Montserrat', sans-serif; 
+    display: flex;
+    justify-content: end;
+    margin-right: 140px;
+    margin-top: 55px;
+}
+
+button{
+    margin: 9.5px ;
+    font-size: 16px;
+    background-color: white;
+    width: 150px;
+    height: 55px;
+    border-radius: 15px;
+    margin-right: 10px;
+    border: 2px solid #A000FF;
+    color: #A000FF;
+}
+
+button:hover{
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #A000FF;
+    border: 3px solid #00FFA0;
+    color: #00FFA0;
+}
+
+
+#volver{
+    font-size: 16px;
+    background-color: white;
+    border-radius: 15px;
+    margin-right: 10px;
+    border: 2px solid #00FFA0;
+    color: #00FFA0;
+}
+
+#volver:hover{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #00FFA0;
+    border: 3px solid #A000FF;
+    color: #A000FF;
+}
