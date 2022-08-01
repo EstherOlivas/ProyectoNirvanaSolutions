@@ -1,4 +1,4 @@
-/* FONT TODO LE FORMULARIO */
+/* FONT TODO LA VENTANA */
 body{
     font-family: 'Montserrat', sans-serif; 
 }
@@ -17,7 +17,7 @@ h1{
 img{
     margin-right: 300px;
 }
-
+/* tabla */
 table{
     width: 60%;
 }
