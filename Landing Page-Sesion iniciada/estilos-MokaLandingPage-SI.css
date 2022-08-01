@@ -211,6 +211,7 @@ main .desc:hover{
     flex-direction: row;
     align-items:flex-end;
     height: 250px;
+    width: auto;
 }
 
 
