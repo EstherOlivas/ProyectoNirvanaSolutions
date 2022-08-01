@@ -1,2 +1,0 @@
-# ProyectoNirvanaSolutions
-Proyecto del Software
