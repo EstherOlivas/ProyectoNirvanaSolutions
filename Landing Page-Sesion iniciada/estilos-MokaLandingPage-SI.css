@@ -11,6 +11,10 @@ body {
     width: 1600px;
 }
 
+header{
+    background-color: #A000FF;
+    height: 150px;
+}
 
 #mokaName{
     padding: 25px 15px 5px 15px;
@@ -54,6 +58,7 @@ main{
 
 .us a.session {
     padding: 20px;
+    margin-right: 10px;
     float: right;
     margin: left 100px;
     background-color: #A000FF;
@@ -196,6 +201,8 @@ main .desc:hover{
     font-weight: bold;
     font-size: 18px;
 }
+
+/*Estilos del footer*/
 
 #footerstyle{
     font-family: 'Montserrat', sans-serif;
