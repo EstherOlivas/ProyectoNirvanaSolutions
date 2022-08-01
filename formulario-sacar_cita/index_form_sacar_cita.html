@@ -19,14 +19,14 @@
             <div id="contenedor_form_logo_boton">
                 <div id="contenedor_form">
                     <h1>Agenda tu cita con nosotros</h1>
-                    <form action="" method="">
+                    <form action="" method="" id="formulario_cita">
                         <div class="contenedor_input">
                             <label for="dateDiaCita">Escoje el dia de tu cita</label>
-                            <input class="llenar" type="date" id="dateDiaCita" >
+                            <input class="llenar" type="date" id="dateDiaCita" required>
                         </div>
                         <div class="contenedor_input">
                             <label for="timeCita">Escoge la hora de tu cita</label>
-                            <input class="llenar" type="time" id="timeCita" >
+                            <input class="llenar" type="time" id="timeCita" required >
                         </div>
                         <div class="contenedor_input">
                             <label for="Doctor">Escoge a tu veterinario de preferencia</label>
@@ -35,27 +35,27 @@
                                 <option value="Dr. Alexis">Dr. Alexis</option>
                                 <option value="Dra. Francis">Dra. Francis</option>
                                 <option value="Dr. Gustavo">Dr. Gustavo</option>
-
                             </select>
                         </div>
                         <div class="contenedor_input">
                             <label for="txtDescripcion">Cuentanos sobre cuidados especiales de tu mascota</label>
                             <textarea class="llenar" name="descripcion_cuidados" id="txtDescripcion" maxlength="500"></textarea>
                         </div>
-
+                        <div id="contenedor_botones">
+                            <button id="btn_Enviar" type="button"> Enviar </button>
+                            <button id="btn_Volver" type="button"> Volver a perfil </button>
+                        </div>
                     </form>
                 </div>
-            <div id="contenedor_logo_botones">
                 <div id="contenedor_logo">
                     <img src="/imagotipo.jpeg" width="500px" alt="imagotipo MOKA">
                 </div>
-                <div id="contenedor_botones">
-                    <button id="enviar" type="button"> Enviar </button>
-                    <button id="volver" type="button"> Volver a perfil </button>
-                </div>
-            </div>
         </div>
         </section>
     </main> 
+    <!-- Sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+    <!-- Controlador -->
+    <script src="/controlador_form_sacar_cita.js"></script>
 </body>
 </html>
