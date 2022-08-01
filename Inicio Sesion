@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo.css" />
+    </head>
+    <body>
+        <aside id="imagen">
+            <img height="300px"   src="imagenes/moka.jpeg">
+        </aside>
+        <div id="container">
+            
+            <h2>Iniciar sesion como</h2>
+        
+           <nav id="texto">
+            <p>
+                <a>Se iniciaría sesion como usuario, secretario, manager, doctor...</a>
+            </p>
+            </nav>
+
+            <section id="datos" >
+                <div class="correo">
+                    <input type="text" id="txtcorreo" maxlength="100" placeholder="Correo electronico o numero de telefono">
+                </div>
+                <div class="contrasenna">
+                    <input type="text" id="txtcontrasenna" maxlength="100"  placeholder="Contraseña">
+                </div>     
+            </section>
+
+            <nav class="button-container">
+                <button type="button" id="btnInicio" class="button">Iniciar sesion</button>
+                <p type="text" id="txtolvidar" class="text">Olvidaste tu contraseña? </p>
+                <button type="button" id="btnNueva" class="button">Crear nueva contraseña</button>
+            </nav>  
+        
+        </div>
+    </body>
+
+</html>

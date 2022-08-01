@@ -1,0 +1,165 @@
+
+body{
+    font-family: 'Montserrat';
+} 
+#imagen1 {
+    float: right;
+    text-align: center;
+    width: 40%;
+    margin-top: 8%;
+    } 
+#contenedor {
+    float: left;
+    text-align: center;
+    width: 45%;
+    margin-top: 4%;
+    }  
+header {
+    text-align: center;
+    justify-content:center;
+    margin-top: 5%;
+    width: 100%;
+    }
+.nombre {
+    text-align:center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 60px;
+    }
+#txtnombre {
+    text-align: center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 61px;
+    width: 40%;
+    height: 25px;
+    border-radius: 5px;
+    border-color: black;
+    }
+.numero {
+    text-align:center;
+    justify-content:center;
+    margin-top: 5%;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 60px;
+    }
+#txtnumero {
+    text-align: center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 61px;
+    width: 40%;
+    height: 25px;
+    border-radius: 5px;
+    border-color: black;
+    }
+.fecha {
+    text-align:center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 60px;
+    }
+#txtfecha {
+    text-align: center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 48px;
+    width: 40%;
+    height: 25px;
+    border-radius: 5px;
+    border-color: black;
+    }
+.direccion {
+    text-align:center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 60px;
+    }
+#txtdireccion {
+    text-align:center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 100px;
+    width: 40%;
+    height: 25px;
+    border-radius: 5px;
+    border-color: black;
+    }
+.cvv {
+    text-align:center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 60px;
+    }
+#txtcvv {
+    text-align: center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 120px;
+    width: 40%;
+    height: 25px;
+    border-radius: 5px;
+    border-color:black;
+    }
+#imagen2 {
+    float: left;
+    text-align: center;
+    width: 45%;
+    vertical-align: auto;
+    margin: 22px;
+    position: relative;
+    right: 50px;
+    } 
+.btncontenedor {
+    float: right;
+    text-align: center;
+    width: 40%;
+    height: 25px;
+    margin: 40px;
+    } 
+#btnguardar {
+    width: 20%;
+    padding: 12px 12px; 
+    background-color: #00fa9a;
+    color: #4682b4;
+    border-radius: 5px;  
+    margin: 10px; 
+    border-color: #00fa9a;
+    font-weight: bold;
+    
+} 
+#btnatras {
+    width: 25%;
+    padding: 12px 12px; 
+    color: #6a5acd;
+    border-radius: 5px;  
+    border-color: #6a5acd; 
+    margin: 10px; 
+    font-weight: bold;
+    background-color: transparent;
+} 
+
+#titulo{
+    position: relative;
+    left: 150px;
+}
