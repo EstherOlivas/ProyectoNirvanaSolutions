@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moka Landing Page</title>
+    <link rel="stylesheet" href="/estilos/estilos-MokaLandingPage.css">
+    <link rel="stylesheet" href="/estilos/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&family=Amatic+SC&family=Bebas+Neue&family=Montserrat:wght@300;900&family=Rampart+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body class="homePage">
+    <header>
+        <div id="mokaName">
+            <h1> Moka Veterinaria y Hotel </h1>
+        </div>
+        <nav>
+            <div class="us">
+                <a  href="#aboutus">Acerca de nosotros </a>
+                <a  href="#ourteam">Nuestro equipo</a>
+                <a  href="#signin" class="session">Registrarse</a>
+                <a  href="#login" class="session" >Iniciar sesion</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2> Moka Vet & Hotel </h2>
+        <p id="curri">Curridabat, Costa Rica</p>
+    
+        <!--Contenido del medio de la pagina-->
+        <section id="middlePage">
+            <!--Ubicación Mapa -->
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="690" height="325" id="gmap_canvas" src="https://maps.google.com/maps?q=curridabat%20costa%20rica&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-a.com"></a><br><style>.mapouter{position:relative;text-align:right;height:325px;width:690px;}</style><a href="https://www.embedgooglemap.net">google iframe map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:325px;width:690px;}</style></div>
+            </div>
+            <div class="logoHome"> <img src="/MokaVetLogo.jpeg" alt="Logo Moka Veterinaria" width="550" height="550"> </div>
+        </section>        
+            
+
+        <!--Botones para cita vete y resevar en el hotel-->
+
+        <section>
+            <div class="buttonsHomePage">
+                <button id="citaVete" type="button"> Cita veterinaria </button>
+                <button id="reservaHotel" type="button"> Reservar en el hotel </button>
+            </div>
+        </section>
+    
+        <!--Seccion de veterinarios -->
+
+        <div id="DoctoresTitulo">
+        <h3>Nuestros doctores</h3>
+        </div>
+
+        <section id="vetes">
+            <div class="veterinarios">
+                <div class="img" id="vete1"> <img src="/vet1.webp" alt="Veterinaria1" width="390" height="290"><p class="desc">Dr. Alexis Moreno<br></p>
+                </div>
+            </div>
+            <div class="veterinarios">
+                <div class="img" id="vete2"> <img src="/vete2.jpg" alt="Veterinaria2" width="370" height="290"> <p class="desc">Dra Maria Silva</p></div>
+        </section>
+        <section id="vetes">
+            <div class="veterinarios">
+                <div class="img" id="vete3"> <img src="/vet3.jpg" alt="Veterinaria3" width="300" height="290"><p class="desc"> Dr Gustavo Nunez </p></div>
+            </div>
+            <div class="veterinarios">
+                <div class="img" id="vete4"> <img src="/vet4.jpg" alt="Veterinaria3" width="390" height="290"><p class="desc">Dra Francis Figeroa</p></div>
+            </div>
+        </section>
+  
+    </main>
+    <footer>
+        <section id="footerStyle" >
+            <div class="footerLeft">
+                <a id="ig"  href="#">Instagram</a>
+                <a href="#"> Facebook </a>
+                <a href="#"> Twitter </a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="footerRight" >
+                <a href="#" class="leftFooter"> Acerca de nosotros</a>
+                <a href="#" class="leftFooter"> Contactanos </a>
+            </div>
+        </section>
+    </footer>
+    
+</body>
+<script src="/controlador.js"></script>
+
+</html>
