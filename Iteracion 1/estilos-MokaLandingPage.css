@@ -6,8 +6,13 @@
 
 /*Estilos del header*/
 
+
+body {
+    width: 1600px;
+}
+
+
 #mokaName{
-    
     padding: 25px 15px 5px 15px;
     background-color:#A000FF;
     font-size: 30px;
@@ -17,6 +22,11 @@
 
 #mokaName:hover{
     font-size: 45px;
+}
+
+main{
+    height: 2500px;
+
 }
 
 .us {
@@ -83,6 +93,7 @@ main .mapouter{
 main #middlePage{
     display:flex;
     align-items: center;   
+    padding: 10px;
 }
 
 main .logoHome{
@@ -92,32 +103,28 @@ main .logoHome{
 /****** Botones de Cita y Reserva ****/
 
 main .buttonsHomePage{
-    border: 1px solid red;
     width: 760px;
     height: 100px;  
     display: flex;
-   
-}
-
-main .buttonsHomePage{
-    display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin: 20px;
-     
+    margin-left: 70px;
+    margin-bottom: 70px;
+    
 }
 
 main #citaVete {
     border: solid 1px #00FFA0;
-    width: 250px;
-    height: 60px;
+    width: 350px;
+    height: 70px;
     font-family:'Montserrat', sans-serif;
+    padding: 10px;
+    margin: 20px;
 }
 
 main #reservaHotel {
     border: solid 1px #00FFA0;
-    width: 250px;
-    height: 60px;
+    width: 350px;
+    height: 70px;
     font-family:'Montserrat', sans-serif; 
     padding: 10px;
     margin: 20px;
@@ -149,32 +156,73 @@ main #citaVete:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 50px;
-    padding: 40px;
+    margin-bottom: 10px;
 }
 
-
 #vetes {
-    border:solid 2px #FFFF00;
     margin: 30px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:flex-end;
     height: 500px;
-    width: 1500px;
-    padding: 20px;
-   
+    width: 1450px;
+    padding: 20px; 
 }
 
 main .img{
-    border: solid 2px red;
     margin: 20px;
     display: flex;
     flex-direction: row;
-
 }
+
+
+main .img:hover{
+    background-color:#A000FF;
+}
+
 
 main .desc{
-    margin: 20px;
+    margin: 30px;
+    padding-left: 10px;
+    padding-right: 90px;
     font-family: 'Montserrat', sans-serif;
-
 }
+ 
+
+main .desc:hover{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* Estilos del footer */
+
+#footerstyle{
+    font-family: 'Montserrat', sans-serif;
+    background-color:#FFFF00;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    height: 250px;
+}
+
+
+.footerLeft a{
+    margin-left: 100px;
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 500px;
+}
+
+
+.footerRight a{
+    margin: 40px;
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 500px;
+}
+
