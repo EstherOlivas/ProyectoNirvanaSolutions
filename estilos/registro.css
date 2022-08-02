@@ -14,10 +14,9 @@ header {
 #imagen {
     position: fixed;
     position: fixed;
-    top: 3px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
 } 
-
 
 
 .header2{
@@ -40,7 +39,8 @@ h4{
     position: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 250px;
+	margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .form {
