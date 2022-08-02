@@ -1,0 +1,165 @@
+
+body{  
+    font-family: 'Montserrat';
+}
+#contenedor {
+    float: left;
+    text-align: center;
+    width: 45%;
+    margin-top: 4%;
+    }  
+header {
+    text-align: center;
+    justify-content:center;
+    margin-top: 5%;
+    width: 50%;
+    position: relative;
+    left: 200;
+    }
+.orden1 {
+    text-align:center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 180px;
+    }
+#txtorden2 {
+    text-align: center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 110px;
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    border-color: black; 
+        }
+.subtotal1 {
+    text-align:center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 162px;
+    }
+#txtsubtotal2 {
+        text-align: center;
+        justify-content:center;
+        margin: 5px;
+        vertical-align: auto;
+        position: relative;
+        left: 155px;
+        width: 30%;
+        height: 30px;
+        border-radius: 5px;
+        border-color: black;
+        }
+.descuento1 {
+    text-align:center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 165px;
+    }
+#txtdescuento2 {
+    text-align: center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 141px;
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    border-color: black;
+        }
+.iva1 {
+    text-align:center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 140px;
+    }
+#txtiva2 {
+        text-align: center;
+        justify-content:center;
+        margin: 5px;
+        vertical-align: auto;
+        position: relative;
+        left: 198px;
+        width: 30%;
+        height: 30px;
+        border-radius: 5px;
+        border-color: black;
+        }
+.total1 {
+            text-align:center;
+            justify-content:center;
+            margin: 5px;
+            vertical-align: auto;
+            position: relative;
+            left: 140px;
+            }
+#txttotal2 {
+                text-align: center;
+                justify-content:center;
+                margin: 5px;
+                vertical-align: auto;
+                position: relative;
+                left: 190px;
+                width: 30%;
+                height: 30px;
+                border-radius: 5px;
+                border-color: black;
+                }
+
+#btnguardar {
+    width: 22%;
+    padding: 12px 12px; 
+    background-color: #00fa9a;
+    color: #4682b4;
+    border-radius: 5px;  
+    margin: 10px; 
+    border-color:  #00fa9a;
+    font-weight: bold;
+    position: relative;
+    left: 20px;
+    
+   
+} 
+#btnatras {
+    width: 22%;
+    padding: 12px 12px; 
+    color: #6a5acd;
+    border-radius: 5px;  
+    border-color:   #00fa9a; 
+    margin: 10px; 
+    font-weight: bold;
+    background-color: transparent;
+    position: relative;
+    left: 20px;
+    margin-top: 50px;
+    
+} 
+
+#titulo{
+    position: relative;
+    left: 350px;
+}
+#imagen1 {
+    float: right;
+    text-align: center;
+    width: 40%;
+    margin-top: 8%;
+    }
+.btncontenedor {
+        float: right;
+        text-align: center;
+        width: 40%;
+        height: 25px;
+        margin: 40px;
+        } 
