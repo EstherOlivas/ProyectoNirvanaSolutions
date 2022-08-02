@@ -5,11 +5,12 @@ body {
 
 .header {
 	padding: 20px;
-    background-color:#A000FF;
     font-size: 33px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
+
+
 .header2{
     position: fixed;
     top: 40px;
@@ -20,7 +21,7 @@ body {
 
 h4{
 	font-size: 30px;
-	color: #00FFA0;
+	color: #A000FF;
 	display: flex;
 	align-items: center;
 	justify-content: center;
