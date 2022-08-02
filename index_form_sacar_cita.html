@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud cita</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/estilos/reset.css">
+    <link rel="stylesheet" href="/estilos/estilos_form_sacar_cita.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <section id="contenedor">
+            <div id="contenedor_form_logo_boton">
+                <div id="contenedor_form">
+                    <h1>Agenda tu cita con nosotros</h1>
+                    <form action="" method="" id="formulario_cita">
+                        <div class="contenedor_input">
+                            <label for="dateDiaCita">Escoje el dia de tu cita</label>
+                            <input class="llenar" type="date" id="dateDiaCita" required>
+                        </div>
+                        <div class="contenedor_input">
+                            <label for="timeCita">Escoge la hora de tu cita</label>
+                            <input class="llenar" type="time" id="timeCita" required >
+                        </div>
+                        <div class="contenedor_input">
+                            <label for="Doctor">Escoge a tu veterinario de preferencia</label>
+                            <select class="llenar" name="nombre_Doc" id="Doctor">
+                                <option value="Dra. María">Dra. María</option>
+                                <option value="Dr. Alexis">Dr. Alexis</option>
+                                <option value="Dra. Francis">Dra. Francis</option>
+                                <option value="Dr. Gustavo">Dr. Gustavo</option>
+                            </select>
+                        </div>
+                        <div class="contenedor_input">
+                            <label for="txtDescripcion">Cuentanos sobre cuidados especiales de tu mascota</label>
+                            <textarea class="llenar" name="descripcion_cuidados" id="txtDescripcion" maxlength="500"></textarea>
+                        </div>
+                        <div id="contenedor_botones">
+                            <a href="/index-MokaLandingPage.html"><button id="btn_Enviar" type="button"> Enviar </button></a>
+                            <a href="/index-MokaLandingPage.html"><button id="btn_Volver" type="button"> Volver a perfil </button></a>
+                        </div>
+                    </form>
+                </div>
+                <div id="contenedor_logo">
+                    <img src="/imagenes/imagotipo.jpeg" width="500px" alt="imagotipo MOKA">
+                </div>
+        </div>
+        </section>
+    </main> 
+    <!-- Sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
+    <!-- Controlador -->
+    <script src="/validaciones/controlador_form_sacar_cita.js"></script>
+</body>
+</html>
