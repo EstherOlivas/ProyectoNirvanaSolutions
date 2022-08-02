@@ -1,5 +1,5 @@
 body {
-    background-color: #ededed;
+    background-color: #fff;
 }
 
 .header {
@@ -7,14 +7,22 @@ body {
     top: 40px;
     left: 60px;
     margin-bottom: 10px;
+    font-size: 15px;
+    color: #4F4F4F;
+}
+.header2{
+    position: fixed;
+    top: 40px;
+    left: 60px;
+    margin-top: 5px;
+    font-size: 25px;
 }
 .container {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .form {
     align-items: center;
     display: flex;
@@ -23,11 +31,18 @@ body {
     justify-content: center;
     row-gap: 10px;
 }
-
 .form input{
-    width: 125%;
+    width: 125;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #A000FF;
+	border: 1px solid gray;
+	border-radius: 5px;
+	width: 400px;
+	outline: none;
+	background: transparent;
 }
-
+.form input::placeholder { color: #A000FF; }
 .form h4{
     width: 125%;
 }
@@ -35,4 +50,52 @@ body {
 #termsAcceptance {
     width: 125;
 }
-
+.botones button{
+	position: relative;
+	
+	padding: 8px 15px;
+	color:#fff;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: .5s;
+	margin-top: 5px;
+	letter-spacing: 3px;
+	background: #00FFA0;
+	border: none;
+}
+.botones button:hover{
+	background: #00FFA0;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #00FFA0,
+				0 0 25px #00FFA0,
+				0 0 50px #00FFA0,
+				0 0 100px #00FFA0;
+}
+/* CSS PARA EL A REF*/
+.botones a{
+	position: relative;
+	
+	padding: 8px 15px;
+	color:#fff;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: .5s;
+	margin-top: 5px;
+	letter-spacing: 3px;
+	background: #00FFA0;
+	border: none;
+}
+.botones a:hover{
+	background: #00FFA0;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #00FFA0,
+				0 0 25px #00FFA0,
+				0 0 50px #00FFA0,
+				0 0 100px #00FFA0;
+}
