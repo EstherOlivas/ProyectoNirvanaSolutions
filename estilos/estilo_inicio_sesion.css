@@ -37,7 +37,8 @@ body{
     padding: 10px 20px; 
     font-size: 15px;
 }
-#btninicio {
+
+#btn-inicio {
     width: 50%;
     padding: 10px 80px; 
     background-color: black; 
@@ -51,7 +52,18 @@ body{
     color: black; 
     margin: 10px;
 }
-#btnnueva {
+
+/* Estilo de los botones */
+
+button{
+    height: 45px;
+    width: 355px;
+    font-size: 16px;  
+    border-radius: 7px;
+    margin: 10px;
+}
+
+#btn-nueva {
     width: 50%;
     padding: 10px 50px;   
     background-color: black; 
@@ -59,19 +71,39 @@ body{
     border-radius: 5px;
     margin: 10px
 } 
-input[type=text] {
-    width: 43%;
-    padding: 10px 20px;
-    margin: 8px 0;
-  }
-#texto {
-    position: relative;
-    width: 70%;
-  }
 
-button:hover{
+#btn-volver {
+    width: 50%;
+    padding: 10px 50px;   
+    background-color: black; 
+    color:#FFFF00;
+    border-radius: 5px;
+    margin: 10px
+} 
+
+#btn-volver:hover{
     cursor: pointer;
+    background-color:#FFFF00;
+    color:#A000FF;
+    font-size: 18px;
+    border: #00FFA0;
+    font-weight: bold;
 }
-.error{
-    border: 4px solid crimson;
+
+#btn-inicio:hover{
+    cursor: pointer;
+    background-color: #00FFA0;
+    color:#A000FF;
+    font-size: 18px;
+    border: #00FFA0;
+    font-weight: bold;
+}
+
+#btn-nueva:hover{
+    cursor: pointer;
+    background-color: #00FFA0;
+    color:#FFFF00;
+    font-size: 20px;
+    border: #00FFA0;
+    font-weight: bold;
 }
