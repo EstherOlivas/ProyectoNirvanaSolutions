@@ -3,12 +3,21 @@ body {
 	font-family: 'Montserrat', sans-serif; 
 }
 
-.header {
-	padding: 20px;
+header {
+	padding: 60px;
     font-size: 33px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+#imagen {
+    position: fixed;
+    position: fixed;
+    top: 3px;
+    right: 10px;
+} 
+
 
 
 .header2{
