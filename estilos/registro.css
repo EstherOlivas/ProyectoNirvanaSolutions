@@ -4,12 +4,11 @@ body {
 }
 
 .header {
-    position: fixed;
-    top: 40px;
-    left: 60px;
-    margin-bottom: 10px;
-    font-size: 15px;
-    color: #4F4F4F;
+	padding: 20px;
+    background-color:#A000FF;
+    font-size: 33px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 .header2{
     position: fixed;
@@ -18,28 +17,40 @@ body {
     margin-top: 5px;
     font-size: 25px;
 }
-.container {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+h4{
+	font-size: 30px;
+	color: #00FFA0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
+.container {
+    position: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 250px;
+}
+
 .form {
+	display: flex;
     align-items: center;
-    display: flex;
+	align-content: center;
     flex-direction: column;
-    align-content: center;
     justify-content: center;
     row-gap: 10px;
 }
+
 .form input{
     width: 125;
 	padding: 10px 0;
 	font-size: 16px;
 	color: #A000FF;
 	border: 1px solid gray;
-	border-radius: 5px;
-	width: 400px;
+	border-radius: 7px;
+	width: 500px;
+	height: 30px;
 	outline: none;
 	background: transparent;
 }
@@ -48,55 +59,50 @@ body {
     width: 125%;
 }
 
-#termsAcceptance {
-    width: 125;
-}
-.botones button{
+body .terms{
+	vertical-align: bottom;
 	position: relative;
-	
-	padding: 8px 15px;
-	color:#fff;
-	font-size: 12px;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	transition: .5s;
-	margin-top: 5px;
-	letter-spacing: 3px;
-	background: #00FFA0;
-	border: none;
+	margin-bottom: 75px;
 }
-.botones button:hover{
-	background: #00FFA0;
-	color: #fff;
-	border-radius: 5px;
-	box-shadow: 0 0 5px #00FFA0,
-				0 0 25px #00FFA0,
-				0 0 50px #00FFA0,
-				0 0 100px #00FFA0;
+
+ #termsAcceptance {
+	width: 120px;
+
 }
+
 /* CSS PARA EL A REF*/
 .botones a{
 	position: relative;
-	
-	padding: 8px 15px;
-	color:#fff;
-	font-size: 12px;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	transition: .5s;
-	margin-top: 5px;
-	letter-spacing: 3px;
-	background: #00FFA0;
-	border: none;
 }
-.botones a:hover{
-	background: #00FFA0;
-	color: #fff;
-	border-radius: 5px;
-	box-shadow: 0 0 5px #00FFA0,
-				0 0 25px #00FFA0,
-				0 0 50px #00FFA0,
-				0 0 100px #00FFA0;
+
+/* Estilo de los botones */
+
+button{
+	font-family: 'Montserrat', sans-serif; 
+	height: 45px;
+    width: 235px;
+    font-size: 16px;  
+    border-radius: 7px;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid #00FFA0;
+    color: #00FFA0;
 }
+#btn-enviar:hover{
+    cursor: pointer;
+    background-color: #00FFA0;
+    color:#A000FF;
+    font-size: 18px;
+    border: #00FFA0;
+    font-weight: bold;
+}
+#btn-volver:hover{
+    cursor: pointer;
+    background-color: #00FFA0;
+    color:#FFFF00;
+    font-size: 20px;
+    border: #00FFA0;
+    font-weight: bold;
+}
+
+
