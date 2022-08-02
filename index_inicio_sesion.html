@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iniciar sesion</title>
+        <link rel="stylesheet" href="/estilos/estilo_inicio_sesion.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <aside id="imagen">
+            <a href="/index-MokaLandingPage.html"><img height="300px"   src="/imagenes/moka.jpeg"></a>
+        </aside>
+
+        <div id="container">
+
+            <h2>Iniciar sesion como</h2>
+
+            <nav id="texto">
+            <p>Se iniciaría sesion como usuario, secretario, manager, doctor...</p>
+            </nav>
+
+            <form id="datos" >
+                <div class="correo">
+                    <input type="text" id="txtcorreo" maxlength="100" placeholder="Correo electronico o numero de telefono" required>
+                </div>
+                <div class="contrasenna">
+                    <input type="password" id="txtcontrasenna" maxlength="100"  placeholder="Contraseña" required>
+                </div>  
+                <div class="button-container">
+                    <button type="button" id="btninicio" class="button">Iniciar sesion</button>
+                    <a href=""><p type="txt" id="txtolvidar" class="txt"><u> ¿Olvidaste tu contraseña? </u></p></a>
+                    <button type="button" id="btnnueva" class="button">Crear nueva cuenta</button>
+                </div>    
+            </form>
+        </div>
+        <!-- Sweetalert -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+        <script src="/validaciones/controlador_inicio_sesion.js"></script>
+    </body>
+
+</html>
+
