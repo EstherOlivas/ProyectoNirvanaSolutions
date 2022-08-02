@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Mascota</title>
+    <link rel="stylesheet" href="/RegistroMascota.css">
+    <link rel="stylesheet" href="/reset.css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+    
+</head>
+<header>
+    <h1>Registra tu mascota</h1>
+</header>
+<body>
+    <main>
+        <section class="parent" id="contenedor">
+            <div id="contenedor_form_logo_boton">
+                <div class="middlePage"  id="contenedor_form">
+                    <h2>Ingresa los datos de tu mascota</h2>
+                    <form action="" method="">
+                        <div class="contenedor_input">
+                            <label for="Nombre"> Nombre </label>
+                            <input class="llenar" type="text" id="nombreMascota" required>
+                        </div>
+                        <div class="contenedor_input">
+                            <label for="race"> Raza </label>
+                            <input class="llenar" type="text" id="petsRace"required>
+                        </div>
+                        <div class="contenedor_input">
+                            <label for="dateBirthdayPet"> Fecha de nacimiento </label>
+                            <input class="llenar" type="date" id="diaDeNacimiento"required>
+                        </div>
+                        <div class="contenedor_input">
+                            <label for="fotoMascota"> Carga tu foto favorita de esta mascota </label>
+                            <input class="llenar" type="file" id="inputFotoMascota" accept="image/*" >
+                            
+                        </div>
+                        <div class="contenedor_input">
+                            <label for="txtDescripcion">Cuentanos sobre cuidados especiales de tu mascota</label>
+                            <textarea class="llenar" name="descripcion_cuidados" id="txtDescripcion" maxlength="600"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+                <div class="middlePage" id="logo">
+                    <img src="/MokaVetLogo.jpeg" alt="Logotipo de Moka Veterinaria" width="500" height="500">
+                 </div>
+            </div>
+            <div id="contenedor_botones">
+                <button id="btn-enviar" type="button"> Enviar </button>
+                <button id="btn-volver" type="button"> Volver a perfil </button>
+            </div>
+            
+        </div>
+        </section>
+    </main> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="/RegistroMascota.js" ></script>
+    <script src="/validacionesRegMasc.js" ></script>
+
+</body>
+</html>
