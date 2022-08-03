@@ -1,0 +1,70 @@
+/* FONT TODO LA VENTANA */
+body{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    margin-top: 60px;
+    margin-left: 180px;
+    font-weight: bold;
+    font-size: 50px;
+}
+img{
+    margin-right: 300px;
+}
+#contenedor_info{
+    margin-left: 150px;
+    width: 50%;
+    display: flex;
+}
+#contenedor_diagnostico{
+
+    width: 60%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    margin: 20px 30px;
+    font-weight: 700;
+}
+textarea{
+    border-radius: 20px;
+    margin-left: 170px;
+    border: 1px solid black;
+}
+
+main{
+    display: flex;
+}
+
+#contenedor_boton{
+    width: 33%;
+    display: flex;
+    align-items: flex-end;
+}
+#volver{
+    margin-left: 483px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    background-color: white;
+    width: 135px;
+    height: 45px;
+    border-radius: 7px;
+    border: 2px solid #00FFA0;
+    color: #00FFA0;
+}
+
+#volver:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #00FFA0;
+    border: 3px solid #A000FF;
+    color: #A000FF;
+}

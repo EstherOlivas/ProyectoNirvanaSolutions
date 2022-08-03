@@ -1,0 +1,102 @@
+/* FONT TODO LE FORMULARIO */
+*{
+    font-family: 'Montserrat', sans-serif; 
+}
+body{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+margin-top: 100px;
+margin-left: 140px;
+font-weight: bold;
+font-size: 50px;
+}
+img{
+    margin-right: 300px;
+}
+
+button{
+    width: 300px;
+    height: 120px;
+    border-radius: 7px;
+    font-size: 16px;
+    border: 1px solid black;
+    background-color: white;
+
+}
+button:hover{
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px solid black;
+}
+#contenedor_vista_cliente{
+    display: flex;
+    flex-direction: column;
+}
+#botones_cliente_runo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+#botones_cliente_rdos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+#contenedor_volver{
+    margin-top: 120px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#volver{
+    width: 135px;
+    height: 45px;
+    margin-right: 150px;
+    border: 2px solid #00FFA0;
+    color: #00FFA0;
+}
+#volver:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #00FFA0;
+    border: 3px solid #A000FF;
+    color: #A000FF;
+}
+@media only screen and (max-width:650px){
+    h1{
+        font-size: 25px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+        margin-left: 120px;
+    }
+
+
+    #contenedor_vista_cliente{
+        flex-direction: column;
+        align-items: center;
+        }
+    #botones_cliente_runo{
+        flex-direction: column;
+    }
+    #botones_cliente_rdos{
+        margin-top: 1px;
+        flex-direction: column;
+    }
+    button{
+        margin: 10px 0;
+
+    }
+    #contenedor_volver{
+        margin-top: 20px;
+    }
+
+}
