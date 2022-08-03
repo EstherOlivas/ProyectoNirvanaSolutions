@@ -14,7 +14,7 @@ header {
     margin-top: 5%;
     width: 50%;
     }
-#correo1 {
+#correo {
     text-align:center;
     justify-content:center;
     margin: 5px;
@@ -22,7 +22,7 @@ header {
     position: relative;
     right: 20px;
     }
-#txtcorreo2 {
+#txtcorreo {
     text-align: center;
     justify-content:center;
     margin: 5px;
@@ -34,7 +34,7 @@ header {
     border-radius: 5px;
     border-color: black; 
         }
-#nombre1 {
+#nombre {
     text-align:center;
     justify-content:center;
     margin: 5px;
@@ -42,7 +42,7 @@ header {
     position: relative;
     right: 60px;
     }
-#txtnombre2 {
+#txtnombre {
         text-align: center;
         justify-content:center;
         margin: 5px;
@@ -54,7 +54,7 @@ header {
         border-radius: 5px;
         border-color: lack;
         }
-#direccion1 {
+#direccion {
     text-align:center;
     justify-content:center;
     margin: 5px;
@@ -62,7 +62,7 @@ header {
     position: relative;
     right: 50px;
     }
-#txtdireccion2 {
+#txtdireccion {
     text-align: center;
     justify-content:center;
     margin: 5px;
@@ -74,7 +74,7 @@ header {
     border-radius: 5px;
     border-color: black;
         }
-#telefono1 {
+#telefono {
     text-align:center;
     justify-content:center;
     margin: 5px;
@@ -82,7 +82,7 @@ header {
     position: relative;
     right: 10px;;
     }
-#txttelefono2 {
+#txttelefono {
         text-align: center;
         justify-content:center;
         margin: 5px;
@@ -105,9 +105,7 @@ header {
     border-color:  #00fa9a;
     font-weight: bold;
     position: relative;
-    left: 200px;
-    
-   
+    left: 200px; 
 } 
 #btnatras {
     width: 12%;
@@ -120,8 +118,7 @@ header {
     background-color: transparent;
     position: relative;
     left: 200px;
-    margin-top: 450px;
-    
+    margin-top: 450px;    
 } 
 #btnedit {
     width: 20%;
@@ -145,7 +142,7 @@ header {
     border-color:   #00fa9a;
     font-weight: bold;
     position: relative;
-    left: 240px;    
+    left: 150px;    
 }
 #titulo{
     position: relative;
