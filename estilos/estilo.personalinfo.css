@@ -2,6 +2,16 @@
 body{  
     font-family: 'Montserrat';
 }
+#titulo{
+    position: relative;
+    left: 250px;
+}
+#imagen1 {
+    float: right;
+    text-align: center;
+    width: 40%;
+    margin-top: 8%;
+    }
 #contenedor {
     float: left;
     text-align: center;
@@ -12,7 +22,7 @@ header {
     text-align: center;
     justify-content:center;
     margin-top: 5%;
-    width: 50%;
+    width: 40%;
     }
 #correo {
     text-align:center;
@@ -33,7 +43,7 @@ header {
     height: 30px;
     border-radius: 5px;
     border-color: black; 
-        }
+    }
 #nombre {
     text-align:center;
     justify-content:center;
@@ -43,17 +53,17 @@ header {
     right: 60px;
     }
 #txtnombre {
-        text-align: center;
-        justify-content:center;
-        margin: 5px;
-        vertical-align: auto;
-        position: relative;
-        left: 130px;
-        width: 50%;
-        height: 30px;
-        border-radius: 5px;
-        border-color: lack;
-        }
+    text-align: center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 61px;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border-color: lack;
+    }
 #direccion {
     text-align:center;
     justify-content:center;
@@ -68,12 +78,12 @@ header {
     margin: 5px;
     vertical-align: auto;
     position: relative;
-    left: 130px;
+    left: 61px;
     width: 50%;
     height: 30px;
     border-radius: 5px;
     border-color: black;
-        }
+    }
 #telefono {
     text-align:center;
     justify-content:center;
@@ -83,68 +93,46 @@ header {
     right: 10px;;
     }
 #txttelefono {
-        text-align: center;
-        justify-content:center;
-        margin: 5px;
-        vertical-align: auto;
-        position: relative;
-        left: 131px;
-        width: 50%;
-        height: 30px;
-        border-radius: 5px;
-        border-color: black;
-        }
-
-#btnguardar {
-    width: 10%;
-    padding: 8px 8px; 
-    background-color: #00fa9a;
-    color: #4682b4;
-    border-radius: 5px;  
-    margin: 10px; 
-    border-color:  #00fa9a;
-    font-weight: bold;
+    text-align: center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
     position: relative;
-    left: 300px; 
-} 
-#btnatras {
-    width: 12%;
-    padding: 8px 8px; 
+    left: 61px;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border-color: black;
+    }
+button{
+        font-family: 'Montserrat', sans-serif; 
+        height: 45px;
+        width: 15%;
+        font-size: 12px;  
+        border-radius: 7px;
+        margin: 10px;
+        background-color: white;
+        border: 2px solid #00FFA0;
+        color: #6a5acd;
+        position: relative;
+        margin-top: 150px;
+        left: 200px;
+    }
+    
+#btnguardar {
+   
+    background-color: #00fa9a;
+    color: #4682b4; 
+    border-color:  #00fa9a;
+    font-weight: bold; 
+    } 
+#btnatras:hover {
+    
+
     color: #6a5acd;
-    border-radius: 5px;  
-    border-color:   #00fa9a; 
-    margin: 10px; 
+    border-color:   #6a5acd; 
     font-weight: bold;
     background-color: transparent;
-    position: relative;
-    left: 200px;
-    margin-top: 450px;    
+    
 } 
-#btnedit {
-    width: 20%;
-    padding: 12px 12px; 
-    background-color: #00fa9a;
-    color: #4682b4;
-    border-radius: 5px;  
-    margin: 5px; 
-    border-color:   #00fa9a;
-    font-weight: bold;
-    position: relative;
-    left: 150px;    
-} 
-#btnedit3 {
-    width: 20%;
-    padding: 12px 12px; 
-    background-color: #00fa9a;
-    color: #4682b4;
-    border-radius: 5px;  
-    margin: 5px; 
-    border-color:   #00fa9a;
-    font-weight: bold;
-    position: relative;
-    left: 150px;    
-}
-#titulo{
-    position: relative;
-    left: 150px;
-}
+
