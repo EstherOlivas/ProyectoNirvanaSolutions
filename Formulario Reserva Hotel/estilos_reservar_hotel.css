@@ -1,0 +1,125 @@
+/* FONT TODO El FORMULARIO */
+*{
+    font-family: 'Montserrat', sans-serif;  
+    background-color: rgb(255, 255, 255);
+}
+/*  */
+
+/* Formulario */
+h1{
+    font-weight: bold; 
+    font-size: 30px; 
+    margin-bottom: 40px;
+    padding-left: 170px;
+  }
+#contenedor_form_logo_boton{
+    display: flex;
+    height: 963px;
+
+}
+.contenedor_input{
+    display: flex;
+    flex-direction: column;
+
+}
+#contenedor_form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 963px;
+    
+}
+form{
+    width: 50%;
+    padding-left: 170px;
+}
+
+label{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.llenar{
+    font-size: 20px;  
+    text-align: center;
+    border-radius: 7px;
+    height: 50px;
+    border: 1px solid black;
+    
+}
+#txtDescripcion{
+    height: 250px;
+    text-align: left;
+    padding: 5px;
+}
+/*  */
+
+/* contenedor imagotipo */
+#contenedor_logo_botones{
+    width: 50%;
+
+    
+}
+#contenedor_logo{
+    
+    display: flex;
+    justify-content: center;
+    height: 800px;
+
+}
+img{
+    padding-top: 160px;
+    padding-bottom: 150px;
+    padding-right: 170px;
+}
+/* contenedor botones */
+#contenedor_botones{
+
+    height: 155px;
+    display: flex;
+    
+    justify-content: center;
+
+}
+button{
+    margin: 9.5px ;
+    font-size: 16px;
+    background-color: white;
+    width: 100px;
+    height: 45px;
+    border-radius: 15px;
+    margin-right: 10px;
+    border: 2px solid #A000FF;
+    color: #A000FF;
+}
+button:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #A000FF;
+    border: 3px solid #00FFA0;
+    color: #00FFA0;
+}
+#enviar{
+    color: white;
+    border: none;
+    background-color: #A000FF;
+}
+#volver{
+    font-size: 16px;
+    background-color: white;
+    width: 135px;
+    height: 45px;
+    border-radius: 7px;
+    margin-right: 10px;
+    border: 2px solid #00FFA0;
+    color: #00FFA0;
+}
+
+#volver:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #00FFA0;
+    border: 3px solid #A000FF;
+    color: #A000FF;
+}
