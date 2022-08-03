@@ -1,0 +1,98 @@
+body{
+    background: #A000FF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.contenedor{
+    text-align:center;
+    display: block;
+    margin-top: 10%;
+    margin-left: 33%;
+    background-color: #ededed;
+    width: 450px;
+    height: 345px;
+    border-radius: 5px;
+    border: #A000FF;
+    
+}
+
+.btn{
+	position: relative;
+	
+	padding: 8px 15px;
+	color:#fff;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: .5s;
+	margin-top: 5px;
+	letter-spacing: 3px;
+	background: #A000FF;
+	border: none;
+    border-radius: 5px;
+}
+.btn:hover{
+	background: #A000FF;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #A000FF,
+				0 0 25px #A000FF,
+				0 0 50px #A000FF,
+				0 0 100px #A000FF;
+}
+
+/*boton 2*/
+.btn2{
+	position: relative;
+	
+	padding: 8px 15px;
+	color:#fff;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: .5s;
+	margin-top: 5px;
+	letter-spacing: 3px;
+	background: #FAE560 ;
+	border: none;
+    border-radius: 5px;
+}
+.btn2:hover{
+	background: #FAE560 ;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #FAE560 ,
+				0 0 25px #FAE560 ,
+				0 0 50px #FAE560 ,
+				0 0 100px #FAE560 ;
+}
+
+/*boton 3*/
+.btn3{
+	position: relative;
+	
+	padding: 8px 15px;
+	color:#fff;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: .5s;
+	margin-top: 5px;
+	letter-spacing: 3px;
+	background: #00FFA0  ;
+	border: none;
+    border-radius: 5px;
+}
+.btn3:hover{
+	background: #00FFA0  ;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #00FFA0  ,
+				0 0 25px #00FFA0  ,
+				0 0 50px #00FFA0  ,
+				0 0 100px #00FFA0  ;
+}
