@@ -82,7 +82,6 @@ img{
     bottom: 3;
     right: 0;
     height: 100px;
-
 }
 
 button{
@@ -97,7 +96,7 @@ button{
 }
 #btn-volver:hover{
     cursor: pointer;
-    background-color: #00FFA0;
+    background-color:#FFFF00;
     color:#A000FF;
     font-size: 18px;
     border: #00FFA0;
@@ -112,3 +111,4 @@ button{
     border: #00FFA0;
     font-weight: bold;
 }
+
