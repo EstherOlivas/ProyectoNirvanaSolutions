@@ -137,7 +137,7 @@ header {
     height: 25px;
     margin: 40px;
     } 
-#btnguardar {
+#btnaceptar:hover {
     width: 20%;
     padding: 12px 12px; 
     background-color: #00fa9a;
@@ -165,7 +165,7 @@ button{
     font-size: 12px;  
     border-radius: 7px;
     margin: 10px;
-    background-color: white;
+    background-color: transparent;
     border: 2px solid #00FFA0;
     color: #6a5acd;
 }

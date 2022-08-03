@@ -4,18 +4,20 @@ body{
 }
 #titulo{
     position: relative;
-    left: 250px;
+    left: 160px;
 }
 #imagen1 {
     float: right;
     text-align: center;
     width: 40%;
     margin-top: 8%;
+    position: relative;
+    right: 80px;
     }
 #contenedor {
     float: left;
     text-align: center;
-    width: 45%;
+    width: 50%;
     margin-top: 4%;
     }  
 header {
@@ -38,7 +40,7 @@ header {
     margin: 5px;
     vertical-align: auto;
     position: relative;
-    left: 61px;
+    left: 80px;
     width: 50%;
     height: 30px;
     border-radius: 5px;
@@ -58,7 +60,7 @@ header {
     margin: 5px;
     vertical-align: auto;
     position: relative;
-    left: 61px;
+    left: 80px;
     width: 50%;
     height: 30px;
     border-radius: 5px;
@@ -78,7 +80,7 @@ header {
     margin: 5px;
     vertical-align: auto;
     position: relative;
-    left: 61px;
+    left: 80px;
     width: 50%;
     height: 30px;
     border-radius: 5px;
@@ -98,7 +100,7 @@ header {
     margin: 5px;
     vertical-align: auto;
     position: relative;
-    left: 61px;
+    left: 80px;
     width: 50%;
     height: 30px;
     border-radius: 5px;
@@ -115,11 +117,11 @@ button{
         border: 2px solid #00FFA0;
         color: #6a5acd;
         position: relative;
-        margin-top: 150px;
-        left: 200px;
+        margin-top: 120px;
+        left: 100px;
     }
     
-#btnguardar {
+#btnguardar:hover {
    
     background-color: #00fa9a;
     color: #4682b4; 
