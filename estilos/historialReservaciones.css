@@ -24,90 +24,71 @@ img{
 /* Estilos de la tabla */
 
 #contenerdorTabla{
-    border: green 5px solid;
     font-family: 'Montserrat', sans-serif; 
     display: flex;
     justify-content: center;
-    width: 1300px;
+    width: 1600px;
     height: auto;
     margin-left: 80px;
+    
 }
 
 td{
-    height: 50px; 
-   text-align: left;
-   align-content: space-between;
-}
-
-
-tr{
-    align-self: center;
-}
-
-table{
-    text-align: left;
+    height: 50px;
+    vertical-align:bottom;
 }
 
 
 .titulo{
-    background: lightgrey;
+    background: #FFFF00;
     width: 1300px;
     font-size: 25px;
     font-weight: bold;
-    padding: 8px; 
+    padding: 20px; 
+    text-align:left;
 }
 
-.data{
-    background: lightgreen;
+.data2{
+    background: #00FFA0;
+
 }
 
 
 /* Estilos de los botones */
 
-#contenedor_boton{
-    font-family: 'Montserrat', sans-serif; 
-    display: flex;
-    justify-content: end;
-    margin-right: 140px;
-    margin-top: 55px;
+
+#contenedor_botones{
+    position: fixed;
+    bottom: 3;
+    right: 0;
+    height: 100px;
 }
 
 button{
-    margin: 9.5px ;
-    font-size: 16px;
+    font-family: 'Montserrat', sans-serif; 
+    height: 45px;
+    width: 235px;
+    font-size: 16px;  
+    border-radius: 7px;
+    margin: 10px;
     background-color: white;
-    width: 150px;
-    height: 55px;
-    border-radius: 15px;
-    margin-right: 10px;
-    border: 2px solid #A000FF;
-    color: #A000FF;
-}
-
-button:hover{
-    cursor: pointer;
-    font-size: 22px;
-    font-weight: bold;
-    background-color: #A000FF;
-    border: 3px solid #00FFA0;
-    color: #00FFA0;
-}
-
-
-#volver{
-    font-size: 16px;
-    background-color: white;
-    border-radius: 15px;
-    margin-right: 10px;
     border: 2px solid #00FFA0;
     color: #00FFA0;
 }
-
-#volver:hover{
+#btn-volver:hover{
     cursor: pointer;
+    background-color:#FFFF00;
+    color:#A000FF;
+    font-size: 18px;
+    border: #00FFA0;
     font-weight: bold;
-    font-size: 22px;
+}
+
+#btn-imprimir:hover{
+    cursor: pointer;
     background-color: #00FFA0;
-    border: 3px solid #A000FF;
-    color: #A000FF;
+    color:#A000FF;
+    font-size: 18px;
+    border: #00FFA0;
+    font-weight: bold;
 }
