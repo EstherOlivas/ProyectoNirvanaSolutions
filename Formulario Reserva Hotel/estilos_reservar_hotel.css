@@ -75,47 +75,35 @@ img{
 }
 /* contenedor botones */
 #contenedor_botones{
-
+    width: 1500px;
     height: 155px;
     display: flex;
-    
-    justify-content: center;
-
+    justify-content: end;
+    align-items: flex-end;
 }
 button{
-    margin: 9.5px ;
-    font-size: 16px;
-    background-color: white;
-    width: 100px;
     height: 45px;
-    border-radius: 15px;
-    margin-right: 10px;
-    border: 2px solid #A000FF;
-    color: #A000FF;
-}
-button:hover{
-    cursor: pointer;
-    font-weight: bold;
-    background-color: #A000FF;
-    border: 3px solid #00FFA0;
-    color: #00FFA0;
-}
-#enviar{
-    color: white;
-    border: none;
-    background-color: #A000FF;
-}
-#volver{
-    font-size: 16px;
-    background-color: white;
     width: 135px;
-    height: 45px;
+    font-size: 16px;  
     border-radius: 7px;
-    margin-right: 10px;
+    margin-bottom: 9px;
+    background-color: white;
     border: 2px solid #00FFA0;
     color: #00FFA0;
 }
-
+#enviar{
+    margin-right: 15px;
+}
+#enviar:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #00FFA0;
+    border: 3px solid #FFFF00;
+    color: #FFFF00;
+}
+#volver{
+    margin-right: 55px;
+}
 #volver:hover{
     cursor: pointer;
     font-weight: bold;
