@@ -1,5 +1,6 @@
 const btnguardar = document.getElementById("btnguardar");
 const correo  = document.getElementById("txtcorreo");
+const numero  = document.getElementById("txtnumero");
 
 function validarCamposVacios() {
     let error = false;
@@ -28,10 +29,24 @@ function validarCorreo() {
     }
     return error;
 }
+function validarNumero() {
+    let error = false;
+    let numero_usuario = inputnumero.value;
+    let expresion_numero = [0-9];
+
+    if (expresion_numero.test(numero_usuario) == false) {
+        error = true;
+        inputnumero.classList.add("error");
+    } else {
+        inputnumero.classList.remove("error");
+    }
+    return error;
+}
 
 function guardarinfo () {
     let error_campos_vacios =validarCamposVacios();
     let error_correo= validarCorreo();
+    let error_numero = validarNumero();
  
     if(error_campos_vacios){
         Swal.fire({
@@ -45,6 +60,12 @@ function guardarinfo () {
             icon: "warning",
             title: "Correo inválido",
             text: "El formato permitido es example@example.com"
+        });
+    }else if(error_numero){
+        Swal.fire({
+            icon: "warning",
+            title: "Numero inválido",
+            text: "El formato permitido es en numeros"
         });
     }
     else{        
