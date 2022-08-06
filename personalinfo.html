@@ -21,41 +21,42 @@
         </header>
            
         <section id="contenedor">  
+            <form action="" id="form">
+                <div id="correo">
+                    <label for="txtcorreo"> Correo Electronico </label>
+                </div>
+                <div>
+                    <input type="text" id="txtcorreo" required >
+                </div>
 
-            <div id="correo">
-                <label for="txtcorreo"> Correo Electronico </label>
-            </div>
-            <div>
-                <input type="text" id="txtcorreo"  >
-            </div>
+                <div id="nombre">
+                    <label for="txtnombre"> Nombre </label>
+                </div>
+                <div>
+                    <input type="text" id="txtnombre" required >
+                </div>
 
-            <div id="nombre">
-                <label for="txtnombre"> Nombre </label>
-            </div>
-            <div>
-                <input type="text" id="txtnombre"  >
-            </div>
+                <div id="direccion">
+                    <label for="txtdireccion"> Direccion </label>
+                </div>
+                <div>
+                    <input type="text" id="txtdireccion" required >
+                </div>
 
-            <div id="direccion">
-                <label for="txtdireccion"> Direccion </label>
-            </div>
-            <div>
-                <input type="text" id="txtdireccion"  >
-            </div>
-
-            <div id="telefono">
-                <label for="txttelefono"> Numero de Telefono </label>
-            </div> 
-            <div> 
-                <input type="text" id="txttelefono"  >
-            </div>
-
+                <div id="telefono">
+                    <label for="txttelefono"> Numero de Telefono </label>
+                </div> 
+                <div> 
+                    <input type="text" id="txttelefono" required >
+                </div>
+            </form>
         </section>
 
         <div class="btncontenedor">
             <button type="button" id="btnguardar" class="button">Guardar</button>
             <a href="index-MokaLandingPage.html" > <button type="button" id="btnatras" class="button">Volver al Perfil</button></a>
-        </div>  
+        </div>
+
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"> </script>
         <script src= "validaciones/personalinfo.js"> </script>
 

@@ -1,26 +1,9 @@
-// Ligar inputs con JS 
-
 const btnguardar = document.getElementById("btnguardar");
+const correo  = document.getElementById("txtcorreo");
 
-//ligar el espacio del correo
-const inputcorreo = document.getElementById("txtcorreo");
-
-//ligar el espacio del correo
-const inputnombre = document.getElementById("txtnombre");
-
-//ligar el espacio del correo
-const inputdireccion = document.getElementById("txtdireccion");
-
-//ligar el espacio del correo
-const inputnumero = document.getElementById("txtnumero");
-
-
-// Validar campos en blanco
-
-function validarCamposVacios(){
+function validarCamposVacios() {
     let error = false;
-    let campos_requeridos = document.querySelectorAll("#contenedor [required] ");
-
+    let campos_requeridos = document.querySelectorAll("#form [required]");
     for (let i = 0; i < campos_requeridos.length; i++) {
         if (campos_requeridos[i].value == "") {
             error = true;
@@ -32,21 +15,44 @@ function validarCamposVacios(){
     return error;
 }
 
-function guardarInformacion() 
-    let error_campos_vacios = validarCamposVacios();
+function validarCorreo() {
+    let error = false;
+    let texto_usuario = inputCorreo.value;
+    let expresion_correo = /[a-zA-Z0-9].+@[a-zA-Z0-9]+.[a-z]+/;
 
-    if (error_campos_vacios) {
+    if (expresion_correo.test(texto_usuario) == false) {
+        error = true;
+        inputCorreo.classList.add("error");
+    } else {
+        inputCorreo.classList.remove("error");
+    }
+    return error;
+}
+
+function guardarinfo () {
+    let error_campos_vacios =validarCamposVacios();
+    let error_correo= validarCorreo();
+ 
+    if(error_campos_vacios){
         Swal.fire({
             icon: "warning",
-            title: "Campos vacios",
-            text: "Ops! Olvidaste mencionarnos algo."
-        });
-    } else {
-        Swal.fire({
-            icon: "success",
-            title: "Completado!",
-            text: "Informacion Registrada"
+            title:"Campos Vacios",
+            text: "Todos los campos son obligatorios"
         });
     }
-
-btnguardar.addEventListener("click", guardarInformacion);
+    else if(error_correo){
+        Swal.fire({
+            icon: "warning",
+            title: "Correo inválido",
+            text: "El formato permitido es example@example.com"
+        });
+    }
+    else{        
+        Swal.fire({
+            icon: "success",
+            title: "exito",
+            text:"informacion Almacenada",
+    });
+    }
+} 
+btnguardar.addEventListener("click", guardarinfo)
