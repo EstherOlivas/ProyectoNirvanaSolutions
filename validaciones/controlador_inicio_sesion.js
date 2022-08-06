@@ -34,13 +34,9 @@ function validarCorreo() {
     return error;
 }
 
-
-
 const enviar_info = () =>{
     let error_campos_vacios =validarCamposVacios();
     let error_correo= validarCorreo();
-
-
     
     if(error_campos_vacios){
         Swal.fire({
