@@ -31,18 +31,18 @@ header {
     vertical-align: auto;
     position: relative;
     left: 110px;
-    width: 30%;
+    width: 25%;
     height: 30px;
     border-radius: 5px;
     border-color: black; 
-        }
+    }
 .subtotal1 {
     text-align:center;
     justify-content:center;
     margin: 5px;
     vertical-align: auto;
     position: relative;
-    left: 162px;
+    left: 158px;
     }
 #txtsubtotal2 {
         text-align: center;
@@ -51,7 +51,7 @@ header {
         vertical-align: auto;
         position: relative;
         left: 155px;
-        width: 30%;
+        width: 25%;
         height: 30px;
         border-radius: 5px;
         border-color: black;
@@ -71,7 +71,7 @@ header {
     vertical-align: auto;
     position: relative;
     left: 141px;
-    width: 30%;
+    width: 25%;
     height: 30px;
     border-radius: 5px;
     border-color: black;
@@ -91,7 +91,7 @@ header {
         vertical-align: auto;
         position: relative;
         left: 198px;
-        width: 30%;
+        width: 25%;
         height: 30px;
         border-radius: 5px;
         border-color: black;
@@ -111,41 +111,47 @@ header {
                 vertical-align: auto;
                 position: relative;
                 left: 190px;
-                width: 30%;
+                width: 25%;
                 height: 30px;
                 border-radius: 5px;
                 border-color: black;
                 }
 
-#btnguardar {
+button{
+	font-family: 'Montserrat', sans-serif; 
+	height: 45px;
+    width: 25%;
+    font-size: 12px;  
+    border-radius: 7px;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid #00FFA0;
+    color: #6a5acd;
+}
+
+#btncontinuar:hover {
     width: 22%;
     padding: 12px 12px; 
     background-color: #00fa9a;
     color: #4682b4;
     border-radius: 5px;  
-    margin: 10px; 
+    margin: 10px;
     border-color:  #00fa9a;
     font-weight: bold;
     position: relative;
-    left: 20px;
-    
-   
+      
 } 
-#btnatras {
-    width: 22%;
+#btnatras:hover {
+    width: 25%;
     padding: 12px 12px; 
     color: #6a5acd;
     border-radius: 5px;  
-    border-color:   #00fa9a; 
-    margin: 10px; 
+    border-color:   #6a5acd;  
     font-weight: bold;
     background-color: transparent;
-    position: relative;
-    left: 20px;
-    margin-top: 50px;
-    
+    position: relative;   
+    margin: 10px;
 } 
-
 #titulo{
     position: relative;
     left: 350px;

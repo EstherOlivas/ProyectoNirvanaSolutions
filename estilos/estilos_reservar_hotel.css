@@ -45,15 +45,13 @@ label{
     text-align: center;
     border-radius: 7px;
     height: 50px;
-    background-color: white;
-    border: none;
+    border: 1px solid black;
     
 }
 #txtDescripcion{
     height: 250px;
     text-align: left;
     padding: 5px;
-    
 }
 
 /*  */
@@ -77,39 +75,40 @@ img{
     padding-right: 170px;
 }
 /* contenedor botones */
-
 #contenedor_botones{
-    position: fixed;
-    bottom: 3;
-    right: 0;
-    height: 100px;
+    width: 1500px;
+    height: 155px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
 }
-
 button{
     height: 45px;
-    width: 235px;
+    width: 135px;
     font-size: 16px;  
     border-radius: 7px;
-    margin: 10px;
+    margin-bottom: 9px;
     background-color: white;
     border: 2px solid #00FFA0;
     color: #00FFA0;
 }
-#btn-volver:hover{
-    cursor: pointer;
-    background-color:#FFFF00;
-    color:#A000FF;
-    font-size: 18px;
-    border: #00FFA0;
-    font-weight: bold;
+#btn-enviar{
+    margin-right: 15px;
 }
-
 #btn-enviar:hover{
     cursor: pointer;
-    background-color: #00FFA0;
-    color:#A000FF;
-    font-size: 18px;
-    border: #00FFA0;
     font-weight: bold;
+    background-color: #00FFA0;
+    border: 3px solid #FFFF00;
+    color: #FFFF00;
 }
-
+#btn-volver{
+    margin-right: 55px;
+}
+#btn-volver:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #00FFA0;
+    border: 3px solid #A000FF;
+    color: #A000FF;
+}

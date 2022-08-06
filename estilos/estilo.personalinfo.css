@@ -2,19 +2,31 @@
 body{  
     font-family: 'Montserrat';
 }
+#titulo{
+    position: relative;
+    left: 160px;
+}
+#imagen1 {
+    float: right;
+    text-align: center;
+    width: 40%;
+    margin-top: 8%;
+    position: relative;
+    right: 80px;
+    }
 #contenedor {
     float: left;
     text-align: center;
-    width: 45%;
+    width: 50%;
     margin-top: 4%;
     }  
 header {
     text-align: center;
     justify-content:center;
     margin-top: 5%;
-    width: 50%;
+    width: 40%;
     }
-#correo1 {
+#correo {
     text-align:center;
     justify-content:center;
     margin: 5px;
@@ -22,19 +34,19 @@ header {
     position: relative;
     right: 20px;
     }
-#txtcorreo2 {
+#txtcorreo {
     text-align: center;
     justify-content:center;
     margin: 5px;
     vertical-align: auto;
     position: relative;
-    left: 61px;
+    left: 80px;
     width: 50%;
     height: 30px;
     border-radius: 5px;
     border-color: black; 
-        }
-#nombre1 {
+    }
+#nombre {
     text-align:center;
     justify-content:center;
     margin: 5px;
@@ -42,19 +54,19 @@ header {
     position: relative;
     right: 60px;
     }
-#txtnombre2 {
-        text-align: center;
-        justify-content:center;
-        margin: 5px;
-        vertical-align: auto;
-        position: relative;
-        left: 130px;
-        width: 50%;
-        height: 30px;
-        border-radius: 5px;
-        border-color: lack;
-        }
-#direccion1 {
+#txtnombre {
+    text-align: center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
+    position: relative;
+    left: 80px;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border-color: lack;
+    }
+#direccion {
     text-align:center;
     justify-content:center;
     margin: 5px;
@@ -62,19 +74,19 @@ header {
     position: relative;
     right: 50px;
     }
-#txtdireccion2 {
+#txtdireccion {
     text-align: center;
     justify-content:center;
     margin: 5px;
     vertical-align: auto;
     position: relative;
-    left: 130px;
+    left: 80px;
     width: 50%;
     height: 30px;
     border-radius: 5px;
     border-color: black;
-        }
-#telefono1 {
+    }
+#telefono {
     text-align:center;
     justify-content:center;
     margin: 5px;
@@ -82,72 +94,47 @@ header {
     position: relative;
     right: 10px;;
     }
-#txttelefono2 {
-        text-align: center;
-        justify-content:center;
-        margin: 5px;
-        vertical-align: auto;
-        position: relative;
-        left: 131px;
-        width: 50%;
-        height: 30px;
-        border-radius: 5px;
-        border-color: black;
-        }
-
-#btnguardar {
-    width: 10%;
-    padding: 8px 8px; 
-    background-color: #00fa9a;
-    color: #4682b4;
-    border-radius: 5px;  
-    margin: 10px; 
-    border-color:  #00fa9a;
-    font-weight: bold;
+#txttelefono {
+    text-align: center;
+    justify-content:center;
+    margin: 5px;
+    vertical-align: auto;
     position: relative;
-    left: 200px;
+    left: 80px;
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border-color: black;
+    }
+button{
+        font-family: 'Montserrat', sans-serif; 
+        height: 40px;
+        width: 14%;
+        font-size: 12px;  
+        border-radius: 7px;
+        margin: 10px;
+        background-color: white;
+        border: 2px solid #00FFA0;
+        color: #6a5acd;
+        position: relative;
+        margin-top: 120px;
+        left: 100px;
+    }
     
+#btnguardar:hover {
    
-} 
-#btnatras {
-    width: 12%;
-    padding: 8px 8px; 
+    background-color: #00fa9a;
+    color: #4682b4; 
+    border-color:  #00fa9a;
+    font-weight: bold; 
+    } 
+#btnatras:hover {
+    
+
     color: #6a5acd;
-    border-radius: 5px;  
-    border-color:   #00fa9a; 
-    margin: 10px; 
+    border-color:   #6a5acd; 
     font-weight: bold;
     background-color: transparent;
-    position: relative;
-    left: 200px;
-    margin-top: 450px;
     
 } 
-#btnedit {
-    width: 20%;
-    padding: 12px 12px; 
-    background-color: #00fa9a;
-    color: #4682b4;
-    border-radius: 5px;  
-    margin: 5px; 
-    border-color:   #00fa9a;
-    font-weight: bold;
-    position: relative;
-    left: 150px;    
-} 
-#btnedit3 {
-    width: 20%;
-    padding: 12px 12px; 
-    background-color: #00fa9a;
-    color: #4682b4;
-    border-radius: 5px;  
-    margin: 5px; 
-    border-color:   #00fa9a;
-    font-weight: bold;
-    position: relative;
-    left: 240px;    
-}
-#titulo{
-    position: relative;
-    left: 150px;
-}
+

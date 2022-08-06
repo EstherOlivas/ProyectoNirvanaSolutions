@@ -1,6 +1,5 @@
 
-body{
-    background-color: lightgray;  
+body{ 
     font-family: 'Montserrat';
 } 
 #imagen1 {
@@ -39,7 +38,7 @@ header {
     width: 40%;
     height: 25px;
     border-radius: 5px;
-    border-color: white;
+    border-color: black;
     }
 .numero {
     text-align:center;
@@ -60,7 +59,7 @@ header {
     width: 40%;
     height: 25px;
     border-radius: 5px;
-    border-color: white;
+    border-color: black;;
     }
 .fecha {
     text-align:center;
@@ -80,7 +79,7 @@ header {
     width: 40%;
     height: 25px;
     border-radius: 5px;
-    border-color: white;
+    border-color: black;;
     }
 .direccion {
     text-align:center;
@@ -100,7 +99,7 @@ header {
     width: 40%;
     height: 25px;
     border-radius: 5px;
-    border-color: white;
+    border-color: black;;
     }
 .cvv {
     text-align:center;
@@ -120,7 +119,7 @@ header {
     width: 40%;
     height: 25px;
     border-radius: 5px;
-    border-color: white;
+    border-color: black;;
     }
 #imagen2 {
     float: left;
@@ -138,7 +137,7 @@ header {
     height: 25px;
     margin: 40px;
     } 
-#btnguardar {
+#btnaceptar:hover {
     width: 20%;
     padding: 12px 12px; 
     background-color: #00fa9a;
@@ -149,7 +148,7 @@ header {
     font-weight: bold;
     
 } 
-#btnatras {
+#btnatras:hover {
     width: 25%;
     padding: 12px 12px; 
     color: #6a5acd;
@@ -159,8 +158,14 @@ header {
     font-weight: bold;
     background-color: transparent;
 } 
-
-#titulo{
-    position: relative;
-    left: 150px;
+button{
+	font-family: 'Montserrat', sans-serif; 
+	height: 55px;
+    width: 25%;
+    font-size: 12px;  
+    border-radius: 7px;
+    margin: 10px;
+    background-color: transparent;
+    border: 2px solid #00FFA0;
+    color: #6a5acd;
 }
