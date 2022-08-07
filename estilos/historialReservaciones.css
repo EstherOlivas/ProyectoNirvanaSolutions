@@ -35,21 +35,21 @@ img{
 
 td{
     height: 50px;
-    vertical-align:bottom;
+    text-align: center;
 }
 
 
 .titulo{
-    background: #FFFF00;
+    background: #00FFA0;
     width: 1300px;
     font-size: 25px;
     font-weight: bold;
     padding: 20px; 
-    text-align:left;
+    text-align:center;
 }
 
 .data2{
-    background: #f1eaf5;
+    background: #00ffa21b;
 
 }
 
@@ -69,11 +69,11 @@ button{
     height: 45px;
     width: 235px;
     font-size: 16px;  
-    border-radius: 7px;
+    border-radius: 15px;
     margin: 10px;
     background-color: white;
-    border: 2px solid #00FFA0;
-    color: #00FFA0;
+    border: 2px solid #A000FF;
+    color: #A000FF;;
 }
 
 #btn-volver:hover{
