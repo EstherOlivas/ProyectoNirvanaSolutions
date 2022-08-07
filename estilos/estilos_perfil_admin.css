@@ -32,8 +32,9 @@ button:hover{
     font-weight: bold;
     font-size: 25px;
     cursor: pointer;
-    border: 3px solid black;
-    background-color: #FFFF00;
+    border: none;
+    border-radius: 30px;
+    background-color: #00FFA0;
 }
 
 #contenedor_vista_cliente{
@@ -41,10 +42,7 @@ button:hover{
     flex-direction: column;
 }
 
-/* #botones_cliente_runo,#botones_cliente_rdos,#botones_cliente_rtres,#botones_cliente_rcuatro{
-    display: flex;
-    justify-content: space-evenly; 
-} */
+/* Estilo de los botones */
 
 #botones_cliente_runo,#botones_cliente_rdos,#botones_cliente_rtres,#botones_cliente_rcuatro{
     display: flex;
@@ -53,18 +51,15 @@ button:hover{
     margin: 12px;
 } 
 
-
 #contenedor_botones{
     position: fixed;
-    bottom: 3;
+    bottom: 100px;
     right: 0;
-    height: 100px;
 }
 
-
-#volver{
-    height: 45px;
-    width: 235px;
+#btn-volver{
+    height: 65px;
+    width: 335px;
     font-size: 16px;  
     border-radius: 7px;
     margin: 10px;
@@ -73,8 +68,7 @@ button:hover{
     color: #A000FF;
 }
 
-
-#volver:hover{
+#btn-volver:hover{
     cursor: pointer;
     background-color: #00FFA0;
     color: #A000FF;
