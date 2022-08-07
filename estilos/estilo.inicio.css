@@ -20,6 +20,9 @@ body{
     justify-content: center;
     align-items: left;
 } 
+header{
+    margin-top: 20%;
+}
 #txtcorreo{
     margin: 10px; 
     border-radius: 5px; 
