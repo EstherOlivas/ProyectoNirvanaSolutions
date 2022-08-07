@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/public/css/reset.css" />
+        <link rel="stylesheet" href="estilos/nuevo.estilo.metodo.pago.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title> Metodo de Pago </title>
+    </head>
+    <body>
+        <aside id= "imagen">
+            <img height="250px"   src="imagenes/moka.jpeg">
+        </aside>
+        <header>
+            <h1>Metodo de Pago</h1>
+        </header>
+        <main>
+            <section id="personalinfo">
+                <form action="" id="formulario">
+
+                    <div class="formulario">
+                        <label for="txtnombre">Nombre Completo</label><br />
+                        <input type="text" correo="" id="txtnombre" required />
+                    </div>
+    
+                    <div class="formulario">
+                        <label for="txtnumero">Numero de Tarjeta</label><br />
+                        <input type="text" nombre="" id="txtnumero" required />
+                    </div>
+    
+                    <div class="formulario">
+                        <label for="txtfecha">Fecha de vencimiento</label><br />
+                        <input type="text" fecha="" id="txtfecha" required />
+                    </div>
+    
+                    <div class="formulario">
+                        <label for="txtdireccion">Direccion</label><br />
+                        <input type="text" direccion="" id="txtdireccion" required />
+                    </div>
+                    <div class="formulario">
+                        <label for="txtcvv">CVV</label><br />
+                        <input type="text" cvv="" id="txtcvv" required />
+                    </div>
+
+                    <a href="index-MokaLandingPage.html" > <button type="button" id="btnvolver" class="button">Volver al Perfil</button></a>
+                    <button id="btnaceptar" type="button">
+                        Aceptar
+                    </button>
+                    <aside id="imagen2">
+                        <img height="100px"   src="imagenes/pago.jpg"
+                    </aside>
+                </form>
+            </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"> </script>
+        <script src="validaciones/controlador.metodo.pago.js"> </script>
+    </body>
+    
+
+
+</html>
