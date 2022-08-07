@@ -1,12 +1,10 @@
-/* inicio */
-const btn_inicio = document.getElementById("btninicio");
-/* correo */
-const inputCorreo = document.getElementById("txtcorreo")
-
+const btnInicio = document.getElementById("btninicio");
+const inputCorreo = document.getElementById("txtcorreo");
 
 function validarCamposVacios() {
     let error = false;
-    let campos_requeridos = document.querySelectorAll("#datos [required]");
+    let campos_requeridos = document.querySelectorAll("#formulario [required]");
+    
     for (let i = 0; i < campos_requeridos.length; i++) {
         if (campos_requeridos[i].value == "") {
             error = true;
@@ -17,8 +15,6 @@ function validarCamposVacios() {
     }
     return error;
 }
-
-//validar correo electrónico
 function validarCorreo() {
     let error = false;
     let texto_usuario = inputCorreo.value;
@@ -33,32 +29,28 @@ function validarCorreo() {
 
     return error;
 }
-
-const enviar_info = () =>{
+function guardarinfo () {
     let error_campos_vacios =validarCamposVacios();
-    let error_correo= validarCorreo();
-    
+    let error_correo = validarCorreo();
     if(error_campos_vacios){
         Swal.fire({
             icon: "warning",
             title:"Campos Vacios",
-            text: "Los campos en rojo son obligatorios"
-
+            text: "Todos los campos son obligatorios"
         });
     }
-    else if(error_correo){
+    else if (error_correo) {
         Swal.fire({
             icon: "warning",
             title: "Correo inválido",
             text: "El formato permitido es example@example.com"
         });
-    }
-    else{        
+    } else {        
         Swal.fire({
             icon: "success",
-            title:"Sesion iniciada",
+            title: "exito",
+            text:"informacion Almacenada",
     });
     }
 } 
-
-btn_inicio.addEventListener("click", enviar_info);
+btnInicio.addEventListener("click", guardarinfo)

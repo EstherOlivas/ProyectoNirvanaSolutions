@@ -10,33 +10,27 @@
         <aside id="imagen">
             <img height="300px"   src="imagenes/moka.jpeg">
         </aside>
+        <h2>Iniciar sesion como</h2>
 
-        <div id="container">
-
-            <h2>Iniciar sesion como</h2>
-
-            <nav id="texto">
-            <p>Se iniciaría sesion como usuario, secretario, manager, doctor...</p>
-            </nav>
-
-            <form id="datos" >
-                <div class="correo">
-                    <input type="text" id="txtcorreo" maxlength="100" placeholder="Correo electronico o numero de telefono">
-                </div>
-                <div class="contrasenna">
-                    <input type="text" id="txtcontrasenna" maxlength="100"  placeholder="Contraseña">
-                </div>     
-            </form>
-
-            <nav class="button-container">
-                <button type="button" id="btninicio" class="button">Iniciar sesion</button>
-                // Falta validacion //
-                <p type="txt" id="txtolvidar" class="txt"><u> ¿Olvidaste tu contraseña? </u></p>
-                <button type="button" id="btnnueva" class="button">Crear nueva contraseña</button>
-                // Falta validacion //
-            </nav>  
-           
+        <nav id="texto">
+        <p>Se iniciaría sesion como usuario, secretario, manager, doctor...</p>
+        </nav>
+        
+    <form action="" id="formulario">
+        <div class="formulario">
+            <input type="text" id="txtcorreo" maxlength="100" placeholder="Correo electronico o numero de telefono">
         </div>
+        <div class="formulario">
+            <input type="text" id="txtcontrasenna" maxlength="100"  placeholder="Contraseña">
+        </div>    
+    </form>
+        
+        <nav class="button-container">
+            <button type="button" id="btninicio" class="button">Iniciar sesion</button>
+            <button type="txt" id="btntolvidar" class="txt"><u> ¿Olvidaste tu contraseña? </u></button>
+            <button type="button" id="btnnueva" class="button">Crear nueva contraseña</button>
+        </nav>  
+             
     </body>
 
 </html>

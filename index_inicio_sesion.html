@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Iniciar sesion</title>
-        <link rel="stylesheet" href="/estilos/estilo_inicio_sesion.css" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilos/estilo_inicio_sesion.css" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     </head>
     <body>
         <aside id="imagen">
-            <a href="/index-MokaLandingPage.html"><img height="500px"   src="/imagenes/moka.jpeg"></a>
+            <img height="300px"   src="imagenes/moka.jpeg">
         </aside>
+        <main>
+            <section id=" inicio">
 
-        <div id="container">
+                <header>Iniciar sesion como</header>
 
-            <h2>Iniciar sesion como</h2>
-
-            <nav id="texto">
-            <p>Se iniciaría sesion como usuario, secretario, manager, doctor...</p>
-            </nav>
-
-            <form id="datos" >
-                <div class="correo">
-                    <input type="text" id="txtcorreo" maxlength="100" placeholder="Correo electronico o numero de telefono" required>
+                <div id="texto">
+                    <p>Se iniciaría sesion como usuario, secretario, manager, doctor...</p>
                 </div>
-                <div class="contrasenna">
-                    <input type="password" id="txtcontrasenna" maxlength="100"  placeholder="Contraseña" required>
-                </div>  
-                <div class="contenedor_botoness">
-                    <button type="button" id="btn-inicio" class="button">Iniciar sesion</button>
-                    <a href=""><p type="txt" id="txtolvidar" class="txt"><u> ¿Olvidaste tu contraseña? </u></p></a>
-                    <a href="/registro.html"><button type="button" id="btn-nueva" class="button">Crear nueva cuenta</button></a>
-                </div>    
-            </form>
-            <div>
-                <a href="/index-MokaLandingPage.html"> <button type="button" id="btn-volver"> Volver al inicio </button></a>
-            </div>
-        </div>
-        <!-- Sweetalert -->
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
-        <script src="/validaciones/controlador_inicio_sesion.js"></script>
+        
+                <form action="" id="formulario">
+                    <div class="formulario">
+                        <input type="text" id="txtcorreo" maxlength="100" placeholder="Correo electronico o numero de telefono" required >
+                    </div>
+                    <div class="formulario">
+                        <input type="text" id="txtcontrasenna" maxlength="100"  placeholder="Contraseña" required >
+                    </div>    
+                </form>
+                
+                <div class="botones">
+                    <button type="button" id="btninicio" class="button">Iniciar sesion</button>
+                    <a href="index_recuperar_contra.html" > <button type="button" id="btnolvidar" class="button">¿Olvidaste tu contraseña?</button></a>    
+                    <a href="index_recuperar_contra.html" > <button type="button" id="btnnueva" class="button">Crear nueva contraseña</button></a> 
+                </div> 
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"> </script>
+                <script src="validaciones/controlador_inicio_sesion.js"> </script>     
+            </section>
+        </main>
     </body>
 
 </html>
-

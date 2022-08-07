@@ -1,22 +1,9 @@
-*{
-    font-family: 'Montserrat', sans-serif;
-}
 
 body{ 
-    font-size:26px ;
+    font-family: 'Montserrat';
 }
-#container{
-    margin-top: 5%;
-    float: right;
-    width: 50%;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    color: black;
-}
-
 #imagen {
-    margin-top: 12%;
+    margin-top: 5%;
     float: left;
     text-align: center;
     width: 50%;
@@ -24,86 +11,47 @@ body{
     justify-content: center;
     align-items: left;
 } 
-#txtcorreo{
-    margin: 10px;  
-    border-radius: 5px;      
-    width: 43%;
-    padding: 10px 20px; 
-    font-size: 15px;
+header{
+    margin-top: 6%;
+    font-size: 26px;  
 }
-#txtcontrasenna {
-    margin: 10px;  
-    border-radius: 5px;      
-    width: 43%;
-    padding: 10px 20px; 
-    font-size: 15px;
-}
-
-/* Estilo de los botones */
-
-button{
-    height: 45px;
-    border-radius: 7px;
-    margin: 10px;
-}
-
-#btn-inicio {
-    width: 455px;
-    padding: 10px 80px; 
-    background-color: black; 
-    color: white;
-    border-radius: 5px;  
-    margin: 10px;
-}  
-#txtolvidar {
-    font-size: 16px;
+#texto{
+    font-size: larger; 
     position: relative;
-    left: 10px;
-    color: black; 
-    margin: 10px;
+    width: 80%;  
 }
-
-#btn-nueva {
-    width: 455px;
-    padding: 10px 50px;   
-    background-color: black; 
+input{
+    margin: 4px;
+    width: 21%;
+    height: 30px; 
+}   
+#btninicio{
+    margin: 4px;    
+    width: 21%;
+    height: 30px; 
+    background-color: black;
+    border: 2px solid black;
     color: white;
-    border-radius: 5px;
-    margin: 10px
-} 
-
-#btn-volver {
-    width: 455px;
-    padding: 10px 50px;   
-    background-color: black; 
-    color:#FFFF00;
-    border-radius: 5px;
-    margin: 10px
-} 
-
-#btn-volver:hover{
-    cursor: pointer;
-    background-color:#FFFF00;
-    color:#A000FF;
-    font-size: 18px;
-    border: #00FFA0;
-    font-weight: bold;
+    display: inline;
 }
-
-#btn-inicio:hover{
-    cursor: pointer;
-    background-color: #00FFA0;
-    color:#A000FF;
-    font-size: 18px;
-    border: #00FFA0;
-    font-weight: bold;
+#btnolvidar{
+    margin: 4px;
+    width: 21%;
+    height: 30px; 
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: black;
+    display: inline;
 }
-
-#btn-nueva:hover{
-    cursor: pointer;
-    background-color: #00FFA0;
-    color:#FFFF00;
-    font-size: 20px;
-    border: #00FFA0;
-    font-weight: bold;
+#btnnueva{
+    margin: 4px;
+    width: 21%;
+    height: 30px;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+}
+#botones{
+    display: inline;
+   
 }
