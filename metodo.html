@@ -16,41 +16,44 @@
             <h1> Metodos de Pago </h1>
         </header>
            
-        <section id="contenedor">     
-            <div class="nombre">
-                <label for="txtnombre"> Nombre Completo </label>
-                <input type="text" id="txtnombre"  >
-            </div>
+        <section id="contenedor">
+            <form action="" id="formulario">    
+                <div class="nombre">
+                    <label for="txtnombre"> Nombre Completo </label>
+                    <input type="text" id="txtnombre" required>
+                </div>
     
-            <div class="numero">
-                <label for="txtnumero"> Numero de Tarjeta</label>
-                <input type="text" id="txtnumero"  >
-            </div>
+                <div class="numero">
+                    <label for="txtnumero"> Numero de Tarjeta</label>
+                    <input type="text" id="txtnumero" required>
+                </div>
     
-            <div class="fecha">
-                <label for="txtfecha"> Fecha de Vencimiento</label>
-                <input type="text" id="txtfecha" >
-            </div>
+                <div class="fecha">
+                    <label for="txtfecha"> Fecha de Vencimiento</label>
+                    <input type="text" id="txtfecha" required>
+                </div>
     
-            <div class="direccion">
-                <label for="txtdireccion"> Direccion</label>
-                <input type="text" id="txtdireccion" >
-            </div>
+                <div class="direccion">
+                    <label for="txtdireccion"> Direccion</label>
+                    <input type="text" id="txtdireccion" required>
+                </div>
     
-            <div class="cvv">
-                <label for="txtcvv"> CVV </label>
-                <input type="text" id="txtcvv" >
-            </div> 
+                <div class="cvv">
+                    <label for="txtcvv"> CVV </label>
+                    <input type="text" id="txtcvv" required>
+                </div>
+            </form>  
         </section>
 
         <aside id="imagen2">
                 <img height="100px"   src="imagenes/pago.jpg">
         </aside>
         <div class="btncontenedor">
-                <button type="button" id= "btnaceptar" class="button"> Aceptar </button>
+                <button  id= "btnaceptar" required id="button"> Aceptar </button>
                 <a href="index-MokaLandingPage.html" > <button type="button" id="btnatras" class="button">Volver al Perfil</button></a>
         </div>  
-        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"> </script>
+        <script src= "validaciones/metodopago.js"> </script>  
     </body>
     
 </html>

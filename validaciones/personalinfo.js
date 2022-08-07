@@ -1,6 +1,6 @@
 const btnguardar = document.getElementById("btnguardar");
-const correo  = document.getElementById("txtcorreo");
-const numero  = document.getElementById("txtnumero");
+const btncorreo  = document.getElementById("txtcorreo");
+const btnnumero  = document.getElementById("txtnumero");
 
 function validarCamposVacios() {
     let error = false;
@@ -15,15 +15,13 @@ function validarCamposVacios() {
     }
     return error;
 }
-
 function validarCorreo() {
     let error = false;
-    let texto_usuario = inputCorreo.value;
+    let texto_usuario = inputcorreo.value;
     let expresion_correo = /[a-zA-Z0-9].+@[a-zA-Z0-9]+.[a-z]+/;
-
-    if (expresion_correo.test(texto_usuario) == false) {
+    if (expresion_correo.test(texto_usuario)==false){
         error = true;
-        inputCorreo.classList.add("error");
+        inputCorreo.classList.add('error');
     } else {
         inputCorreo.classList.remove("error");
     }
@@ -42,7 +40,6 @@ function validarNumero() {
     }
     return error;
 }
-
 function guardarinfo () {
     let error_campos_vacios =validarCamposVacios();
     let error_correo= validarCorreo();
