@@ -1,0 +1,88 @@
+body{
+    font-family: 'Montserrat';  
+}
+main {
+    
+    font-family: 'Montserrat';
+}
+#imagen{
+    float: right;
+    text-align: center;
+    width: 40%;
+    margin-top: 8%;
+    position: relative;
+    right: 80px;
+}
+header{
+    margin-top: 5%;
+    position: relative;
+    left: 350px;
+   
+}
+
+.formulario {
+    width: 30%;
+    height: 50px;
+    margin: 15px auto;
+    position: relative;
+    right: 120px;
+}
+
+label {
+    font-size: 16px;
+    width: 60%;
+}
+
+input {
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 16px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif; 
+    height: 30px;
+    width: 10%;
+    font-size: 12px;  
+    border-radius: 7px;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid #00FFA0;
+    color: #6a5acd;
+    position: relative;
+    margin-top: 60px;
+    float: right;
+   right: 150px;
+}
+#btnaceptar:hover {
+   
+    background-color: #00fa9a;
+    color: #4682b4; 
+    border-color:  #00fa9a;
+    font-weight: bold; 
+} 
+
+#btnvolver:hover {
+    color: #6a5acd;
+    border-color:   #6a5acd; 
+    font-weight: bold;
+    background-color: transparent;
+    position: relative;
+    left: 250px;
+} 
+#btnguardar:hover,
+#btnvolver:hover {
+    cursor: pointer;
+}
+#imagen2 {
+    float: left;
+    text-align: center;
+    width: 45%;
+    vertical-align: auto;
+    margin: 22px;
+    position: relative;
+    left: 150px;
+    } 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/public/css/reset.css" />
+        <link rel="stylesheet" href="estilos/nuevo.estilo.personal.info.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>Personal Info </title>
+    </head>
+    <body>
+        <aside id= "imagen">
+            <img height="250px"   src="imagenes/moka.jpeg">
+        </aside>
+        <header>
+            <h1>Informacion Personal</h1>
+        </header>
+        <main>
+            <section id="personalinfo">
+                <form action="" id="formulario">
+                    <div class="formulario">
+                        <label for="txtcorreo">Correo Electronico</label><br />
+                        <input type="email" correo="" id="txtcorreo" required />
+                    </div>
+    
+                    <div class="formulario">
+                        <label for="txtnombre">Nombre</label><br />
+                        <input type="nombre" nonmbre="" id="txtnombre" required />
+                    </div>
+    
+                    <div class="formulario">
+                        <label for="txtdireccion">Direccion</label><br />
+                        <input type="text" direccion="" id="txtdireccion" required />
+                    </div>
+    
+                    <div class="formulario">
+                        <label for="txtnumero">Numero de Telefono</label><br />
+                        <input type="text" numero="" id="txtnumero" required />
+                    </div>
+
+                    <a href="index-MokaLandingPage.html" > <button type="button" id="btnvolver" class="button">Volver al Perfil</button></a>
+                    <button id="btnguardar" type="button">
+                        Guardar
+                    </button>
+                </form>
+            </section>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"> </script>
+        <script src= "validaciones/controlador.personal.info.js"> </script>
+    </body>
+    
+
+
+</html>

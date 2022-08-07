@@ -1,43 +1,28 @@
-// Ligar inputs con JS 
+const btnAceptar = document.getElementById( btnaceptar);
+//const numero = document.getElementById("txtnumero");
+//const fecha = document.getElementById("txtfecha");
+//const direccion = document.getElementById("txtdireccion");
+//const cvv = document.getElementById("txtcvv");
 
-const btnaceptar = document.getElementById("btnaceptar");
-
-//ligar el espacio del nombre
-const inputcorreo = document.getElementById("txtnombre");
-
-//ligar el espacio del numero de tarjeta
-const inputnombre = document.getElementById("txttxtnumero");
-
-//ligar el espacio de la fecha de vencimiento
-const inputdireccion = document.getElementById("txtvencimiento");
-
-//ligar el espacio de la direccion
-const inputnumero = document.getElementById("txtdireccion");
-
-//ligar el espacio del cvv
-const inputcvv = document.getElementById("txtcvv");
-
-// Validar campos en blanco
-
-function validarCamposVacios(){
+function validarCampos(){
     let error = false;
-    let campos_requeridos = document.querySelectorAll("#contenedor [required]");
+    let campos = document.querySelectorAll("formulario [required]");
 
-    for (let i = 0; i < campos_requeridos.length; i++) {
-        if (campos_requeridos[i].value == "") {
+    for (let i = 0; i < campos.length; i++) {
+        if (campos[i].value == "") {
             error = true;
-            campos_requeridos[i].classList.add("error");
+            campos[i].idList.add("error");
         } else {
-            campos_requeridos[i].classList.remove("error");
+            campos[i].idList.remove("error");
         }
     }
     return error;
 }
 
 function validarInformacion() 
-    let error_campos_vacios = validarCamposVacios();
+    let error_campos = validarCampos();
 
-    if (error_campos_vacios) {
+    if (error_campos) {
         Swal.fire({
             icon: "warning",
             title: "Campos vacios",
@@ -51,4 +36,4 @@ function validarInformacion()
         });
     }
 
-btnaceptar.addEventListener("click", validarInformacion);
+btnAceptar.addEventListener("click", validarInformacion);
