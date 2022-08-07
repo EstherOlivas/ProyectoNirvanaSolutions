@@ -41,9 +41,10 @@ button:hover{
     flex-direction: column;
 }
 
-
-
-/* Botones */
+/* #botones_cliente_runo,#botones_cliente_rdos,#botones_cliente_rtres,#botones_cliente_rcuatro{
+    display: flex;
+    justify-content: space-evenly; 
+} */
 
 #botones_cliente_runo,#botones_cliente_rdos,#botones_cliente_rtres,#botones_cliente_rcuatro{
     display: flex;
