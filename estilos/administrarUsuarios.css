@@ -5,3 +5,98 @@
 
 
 /*Estilos del header*/
+
+header{
+    background-color: #A000FF;
+    height: 150px;
+}
+
+body h1{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold; 
+    font-size: 40px; 
+    padding: 50px;
+}
+
+table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#contenedorTabla{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+    width: 1600px;
+    height: auto;
+}
+
+/* Estilos de la tabla */
+
+
+td{
+    height: 50px;
+    vertical-align:bottom;
+}
+
+.tb{
+    background: #FFFF00;
+    width: 405px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 2px; 
+    text-align: left;
+}
+
+.data2{
+    background-color:#f9f9e5c8;
+}
+
+
+/* Estilo de los botones */
+
+button{
+    font-family: 'Montserrat', sans-serif; 
+    height: 45px;
+    width: 235px;
+    font-size: 16px;  
+    border-radius: 7px;
+    margin: 15px;
+    background-color: white;
+    border: 2px solid #00FFA0;
+}
+
+#contenedor_botones{
+    position: fixed;
+    bottom: 3;
+    right: 0;
+    height: 100px;
+}
+
+.btn-clave:hover{
+    cursor: pointer;
+    background-color:#FFFF00;
+    color:#A000FF;
+    font-size: 18px;
+    border: #00FFA0;
+    font-weight: bold;
+}
+
+.btn-edit:hover{
+    cursor: pointer;
+    background-color: #00FFA0;
+    color:#A000FF;
+    font-size: 18px;
+    border: #00FFA0;
+    font-weight: bold;
+}
+
+.volver:hover{
+    cursor: pointer;
+    background-color: #A000FF;
+    color: #FFFF00;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
