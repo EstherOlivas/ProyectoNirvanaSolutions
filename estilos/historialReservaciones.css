@@ -49,7 +49,7 @@ td{
 }
 
 .data2{
-    background: #00FFA0;
+    background: #f1eaf5;
 
 }
 
@@ -75,11 +75,12 @@ button{
     border: 2px solid #00FFA0;
     color: #00FFA0;
 }
+
 #btn-volver:hover{
     cursor: pointer;
     background-color:#FFFF00;
     color:#A000FF;
-    font-size: 18px;
+    font-size: 22px;
     border: #00FFA0;
     font-weight: bold;
 }
@@ -88,7 +89,7 @@ button{
     cursor: pointer;
     background-color: #00FFA0;
     color:#A000FF;
-    font-size: 18px;
+    font-size: 22px;
     border: #00FFA0;
     font-weight: bold;
 }

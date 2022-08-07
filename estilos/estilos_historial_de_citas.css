@@ -60,13 +60,14 @@ button{
     margin: 9.5px ;
     font-size: 16px;
     background-color: white;
-    width: 100px;
-    height: 45px;
+    width: 200px;
+    height: 245px;
     border-radius: 15px;
     margin-right: 10px;
     border: 2px solid #A000FF;
     color: #A000FF;
 }
+
 button:hover{
     cursor: pointer;
     font-weight: bold;
@@ -82,14 +83,13 @@ button:hover{
     margin-right: 140px;
     margin-top: 2px;
 
-
 }
 
 #volver{
     font-size: 16px;
     background-color: white;
-    width: 135px;
-    height: 45px;
+    width: 235px;
+    height: 55px;
     border-radius: 7px;
     margin-right: 10px;
     border: 2px solid #00FFA0;
@@ -99,6 +99,7 @@ button:hover{
 #volver:hover{
     cursor: pointer;
     font-weight: bold;
+    font-size: 22px;
     background-color: #00FFA0;
     border: 3px solid #A000FF;
     color: #A000FF;
