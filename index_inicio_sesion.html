@@ -11,31 +11,36 @@
             <img height="300px"   src="imagenes/moka.jpeg">
         </aside>
         <main>
-            <section id=" inicio">
+            
 
-                <header>Iniciar sesion como</header>
+            <header>Iniciar sesion como</header>
 
-                <div id="texto">
-                    <p>Se iniciaría sesion como usuario, secretario, manager, doctor...</p>
+            <div id="texto">
+                <p>Se iniciaría sesion como usuario, secretario, manager, doctor...</p>
+            </div>
+            
+            <form action="" id="formulario">
+                <div class="formulario">
+                    <input type="text" id="txtcorreo" maxlength="100" placeholder="Correo electronico o numero de telefono" required >
                 </div>
-        
-                <form action="" id="formulario">
-                    <div class="formulario">
-                        <input type="text" id="txtcorreo" maxlength="100" placeholder="Correo electronico o numero de telefono" required >
-                    </div>
-                    <div class="formulario">
-                        <input type="text" id="txtcontrasenna" maxlength="100"  placeholder="Contraseña" required >
-                    </div>    
-                </form>
-                
-                <div class="botones">
+                <div class="formulario">
+                    <input type="text" id="txtcontrasenna" maxlength="100"  placeholder="Contraseña" required >
+                </div>    
+            </form>
+            <section id=" btncontenedor"> 
+                <div class="boton">
                     <button type="button" id="btninicio" class="button">Iniciar sesion</button>
+                </div>
+                <div class="boton">
                     <a href="index_recuperar_contra.html" > <button type="button" id="btnolvidar" class="button">¿Olvidaste tu contraseña?</button></a>    
-                    <a href="index_recuperar_contra.html" > <button type="button" id="btnnueva" class="button">Crear nueva contraseña</button></a> 
-                </div> 
-                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"> </script>
-                <script src="validaciones/controlador_inicio_sesion.js"> </script>     
-            </section>
+                </div>  
+                <div class="boton">
+                    <a href="index_recuperar_contra.html" > <button type="button" id="btnnueva" class="button">Crear nueva contraseña</button></a>    
+                </div>   
+            </section> 
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"> </script>
+            <script src="validaciones/controlador_inicio_sesion.js"> </script>     
+            
         </main>
     </body>
 
