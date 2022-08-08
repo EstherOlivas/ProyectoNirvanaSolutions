@@ -29,8 +29,11 @@ button{
 }
 button:hover{
     font-weight: bold;
+    font-size: 25px;
     cursor: pointer;
-    border: 3px solid black;
+    border: none;
+    border-radius: 30px;
+    background-color: #00FFA0;
 
 }
 #contenedor_vista_cliente{
@@ -47,19 +50,26 @@ button:hover{
     justify-content: end;
     align-items: center;
 }
-#volver{
-    width: 135px;
+#btn_Volver{
     height: 45px;
-    margin-right: 150px;
+    width: 235px;
+    font-size: 16px;  
+    border-radius: 7px;
+    margin: 10px;
+    background-color: white;
     border: 2px solid #00FFA0;
     color: #00FFA0;
+    
 }
-#volver:hover{
+#btn_Volver:hover{
     cursor: pointer;
-    font-weight: bold;
     background-color: #00FFA0;
-    border: 3px solid #A000FF;
     color: #A000FF;
+    font-size: 26px;
+    font-weight: bold;
+    border: #00FFA0;
+    font: weight 900px;
+    
 }
 @media only screen and (max-width:650px){
     h1{
