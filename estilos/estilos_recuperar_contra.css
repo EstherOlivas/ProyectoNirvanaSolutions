@@ -50,7 +50,7 @@ button{
     margin: 55px 20px;
     font-size: 16px;
     background-color: white;
-    width: 135px;
+    width: 170px;
     height: 45px;
     border-radius: 7px;
     margin-right: 10px;
@@ -59,15 +59,19 @@ button{
 }
 #restablecer:hover{
     cursor: pointer;
-    font-weight: bold;
     background-color: #00FFA0;
-    border: 3px solid #FFFF00;
-    color:#FFFF00;
+    color: #FFFF00;
+    font-size: 26px;
+    font-weight: bold;
+    border: #00FFA0;
+    font: weight 900px;
 }
 #cancelar:hover{
     cursor: pointer;
-    font-weight: bold;
     background-color: #00FFA0;
-    border: 3px solid #A000FF;
     color: #A000FF;
+    font-size: 26px;
+    font-weight: bold;
+    border: #00FFA0;
+    font: weight 900px;
 }
