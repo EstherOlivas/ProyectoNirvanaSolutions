@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilos/estilo.financiero.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <aside id= "imagen">
+            <img height="250px"   src="imagenes/moka.jpeg">
+        </aside>
+
+        <h1 id="titulo">Reporte Financiero</h1>
+        
+        <table id="reporte">
+       
+            <tr>
+                <td><strong>Usuario</strong></td>
+                <td><strong>Servicio</strong></td>
+                <td><strong>Costo</strong></td>
+                <td><strong>Fecha</strong></td>
+            </tr>
+            <form action="" id="formulario"> 
+                <tr>
+                    <td> 
+                        <input type="text" id="txtnombre" placeholder="Nombre"required />
+                    </td>
+                    <td>
+                        <select name="servicio" id="slct-servicio" required>
+                         <option value="">seleccione</option>
+                            <option value="Cita">Cita</option>
+                            <option value="Hotel">Hotel</option>
+                        </select>
+                    </td>
+                    <td> 
+                        <input type="text"  id="txtcosto" placeholder="₡88888" required />
+                    </td>
+                    <td> 
+                        <input type="date" value="2022-08-01" min="2021-01-01" max= "2023-01-01"  fecha="" id="txtfecha" required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> 
+                        <input type="text"  id="txtnombre" placeholder="Nombre"required />
+                    </td>
+                    <td>
+                        <select name="servicio" id="slct-servicio" required>
+                            <option value="null">seleccione</option>
+                            <option value="Cita">Cita</option>
+                            <option value="Hotel">Hotel</option>
+                        </select>
+                    </td>
+                    <td> 
+                        <input type="text"  id="txtcosto" placeholder="₡88888" required />
+                    </td>
+                    <td> 
+                        <input type="date" value="2022-08-01" min="2021-01-01" max= "2023-01-01"  id="txtfecha" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <input type="text" id="txtnombre" placeholder="Nombre"required />
+                    </td>
+                    <td>
+                        <select name="servicio" id="slct-servicio" required>
+                            <option value="null">seleccione</option>
+                            <option value="Cita">Cita</option>
+                            <option value="Hotel">Hotel</option>
+                        </select>
+                    </td>
+                    <td> 
+                        <input type="text"  id="txtcosto" placeholder="₡88888"required />
+                    </td>
+                    <td> 
+                        <input type="date" value="2022-08-01" min="2021-01-01" max= "2023-01-01"  id="txtfecha" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        <input type="text"  id="txtnombre" placeholder="Nombre"required />
+                    </td>
+                    <td>
+                        <select name="servicio" id="slct-servicio" required>
+                            <option value="null">seleccione</option>
+                            <option value="Cita">Cita</option>
+                            <option value="Hotel">Hotel</option>
+                        </select>
+                    </td>
+                    <td> 
+                        <input type="text"  id="txtcosto" placeholder="₡88888" required />
+                    </td>
+                    <td> 
+                        <input type="date" value="2022-08-01" min="2021-01-01" max= "2023-01-01"  id="txtfecha" required />
+                    </td>
+                </tr>
+            </form>    
+        </table>
+        <div id="total">
+            <input type="text"  id="txttotal" placeholder="Costo Total" required />
+        </div>
+        <footer id="btncontenedor"> 
+            <a href="index_perfil_cliente.html" > <button type="button" id="btnvolver" class="button">Volver al Perfil</button></a>
+            <button id="btnver" type="button">
+                Ver
+            </button>
+        </footer> 
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"> </script>
+        <script src="validaciones/controlador.financiero,js"> </script>     
+    </body>
+</html>
