@@ -32,7 +32,7 @@ input{
     background-color: black;
     border: 2px solid black;
     color: white;
-    display: inline;
+    
 }
 #btnolvidar{
     margin: 4px;
@@ -41,7 +41,7 @@ input{
     background-color: transparent;
     border: 2px solid transparent;
     color: black;
-    display: inline;
+    
 }
 #btnnueva{
     margin: 4px;
@@ -52,6 +52,5 @@ input{
     color: white;
 }
 #botones{
-    display: inline;
-   
+    display: inline;   
 }
