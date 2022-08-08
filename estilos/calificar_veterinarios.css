@@ -1,0 +1,186 @@
+/*Colores a usar en el landing page: 
+ violeta #
+ verde cian #00FFA0 
+ amarillo #FFFF00. */
+
+
+/*Estilos del header*/
+
+header{
+    background-color: #A000FF;
+    height: 150px;
+}
+
+body h1{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: bold; 
+    font-size: 40px; 
+    padding: 50px;
+}
+
+table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#contenedorTabla{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+    width: 1600px;
+    height: auto;
+}
+
+/* Estilos de la tabla */
+
+
+td{
+    height: 50px;
+    vertical-align:bottom;
+}
+
+.tb{
+    background: #FFFF00;
+    width: 405px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 2px; 
+    text-align: left;
+}
+
+.data2{
+    background-color:#f9f9e5c8;
+    font-size: 20px;
+}
+.data{
+    background-color:#f9f9e5c8;
+    font-size: 20px;
+}
+
+/* Estilo de los botones */
+
+#contenedor_botones{
+    width: 1500px;
+    height: 155px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+button{
+    height: 45px;
+    width: 135px;
+    font-size: 16px;  
+    border-radius: 7px;
+    margin-bottom: 9px;
+    background-color: white;
+    border: 2px solid #00FFA0;
+    color: #00FFA0;
+}
+#btn_Volver{
+    margin-right: 55px;
+}
+#btn_Enviar{
+    margin-right: 15px;
+}
+#btn_Volver:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #00FFA0;
+    border: 3px solid #A000FF;
+    color: #A000FF;
+}
+#btn_Enviar:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #00FFA0;
+    border: 3px solid #FFFF00;
+    color: #FFFF00;
+}
+
+.error{
+    border: 3px solid red;
+}
+
+@media only screen and (min-width:650px) and (max-width:1024px){
+    #contenedor_logo{
+        height: 800px; 
+    } 
+} 
+@media only screen and (max-width:650px){
+    
+    #contenedor_form_logo_boton{
+        flex-direction: column;
+        justify-content: center;
+    
+    } 
+    #contenedor_logo_botones{
+        width: 100%;
+        justify-content: center;
+    }
+    #contenedor_form{
+    width: 100%;
+    }#contenedor_botones{
+
+        justify-content: start;
+        align-items: flex-end;
+    }
+} 
+
+/* Estrellas */
+
+#form {
+    width: 250px;
+    margin: 19px auto;
+    height: 80px;
+  }
+  
+  #form p {
+    text-align: center;
+  }
+  
+  #form label {
+    font-size: 50px;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion1 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    font-size: 30px;
+    text-align: left;
+  }
+  .clasificacion2 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    font-size: 30px;
+    text-align: left;
+  }
+  .clasificacion3 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    font-size: 30px;
+    text-align: left;
+  }
+  .clasificacion4 {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    font-size: 30px;
+    text-align: left;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
