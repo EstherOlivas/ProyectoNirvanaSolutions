@@ -4,12 +4,16 @@ const btnEnviar = document.getElementById("btn_Enviar");
 const inputFecha =document.getElementById("dateDiaCita");
 /* hora */
 const inputHora =document.getElementById("timeCita");
+/* veterinario */
+const sctDoctor = document.getElementById("Doctor");
+/* cuidados */
+const txtarea = document.getElementById("txtDescripcion");
 
 function valida_CamposVacios() {
     let error = false;
     let campos_requeridos = document.querySelectorAll("#formulario_cita [required]");
     for (let i = 0; i < campos_requeridos.length; i++) {
-        if(campos_requeridos[i].value== " "){
+        if(campos_requeridos[i].value== ""){
             error=true;
             campos_requeridos[i].classList.add("error");
         }   
@@ -32,6 +36,13 @@ function valida_fecha() {
         inputFecha.classList.remove("error");
     }
     return error;
+}
+
+const limpiarCampos =()=>{
+    inputFecha.value="";
+    inputHora.value="";
+    sctDoctor.value="";
+    txtarea.value="";
 }
 
 const enviar_info = () =>{
