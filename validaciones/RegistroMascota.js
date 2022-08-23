@@ -44,5 +44,5 @@ function enviarInformacion() {
             text: "Mascota Registrada"
         });
     }
-
+}
 btnEnviar.addEventListener("click", enviarInformacion);
