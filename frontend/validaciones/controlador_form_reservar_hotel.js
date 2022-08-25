@@ -1,9 +1,9 @@
 /* boton */
-const btnEnviar = document.getElementById("btn_Enviar");
+const btnEnviar = document.getElementById("btn-enviar");
 /* fecha */
-const inputFecha =document.getElementById("dateDiaCita");
-/* hora */
-const inputHora =document.getElementById("timeCita");
+const inputLlegada =document.getElementById("dateDiaLlegada");
+const inputSalida =document.getElementById("dateDiaSalida");
+
 /* veterinario */
 const sctDoctor = document.getElementById("Doctor");
 /* cuidados */
@@ -23,37 +23,52 @@ function valida_CamposVacios() {
     }
     return error;
 }
-
-
-function valida_fecha(){
+function valida_llegada() {
     let error = false;
     var hoy = new Date();
-    var dias = new Date(inputFecha.value);
+    var dias = new Date(inputLlegada.value);
      var calculado = new Date();
      var diassumar = calculado.setDate(
        hoy.getDate() + 15
       );
 
-     if (dias > diassumar||dias<hoy)
-     {
+      if (dias > diassumar||dias<hoy)
+      {
         error=true;
-        inputFecha.classList.add("error");
+        inputLlegada.classList.add("error");
+
      }
      return error;
- }
+}
+
+
+function valida_salida() {
+    let error = false;
+    var diallegada = new Date(inputLlegada.value);
+    var dias = new Date(inputSalida.value);
+
+      if (dias<diallegada)
+      {
+        error=true;
+        inputSalida.classList.add("error");
+        console.log("error1");
+
+     }
+     return error;
+}
+
 
 const limpiarCampos =()=>{
-    inputFecha.value="";
-    inputHora.value="";
-    sctDoctor.value="";
+    inputLlegada.value="";
+    inputSalida.value="";
     txtarea.value="";
 }
 
 const enviar_info = () =>{
     let error_campos_vacios =valida_CamposVacios();
-    let error_fecha= valida_fecha();
-
-    
+    let error_llegada= valida_llegada();
+    let error_salida = valida_salida();
+   
     if(error_campos_vacios){
         Swal.fire({
             icon: "warning",
@@ -62,13 +77,27 @@ const enviar_info = () =>{
 
         });
     }
-    else if(error_fecha){
+    else if(error_llegada){
         Swal.fire({
             icon: "warning",
-            title:"Fecha invalida",
+            title:"Llegada invalida",
             text: "La fecha debe ser dentro de los proximos 15 dias"
         });
     }
+    else if(error_salida){
+        Swal.fire({
+            icon: "warning",
+            title:"Salida invalida",
+            text: "La fecha de salida no puede ser antes de la llegada"
+        });
+    }
+/*     else if(error_salida_luego_entrada){
+        Swal.fire({
+            icon: "warning",
+            title:"Salida invalida",
+            text: "La fecha de salida no puede ser antes de la llegada"
+        });
+    } */
     else{        
         Swal.fire({
             icon: "success",
@@ -77,7 +106,6 @@ const enviar_info = () =>{
     });
     limpiarCampos();
     }
-
 } 
 
 btnEnviar.addEventListener("click", enviar_info);

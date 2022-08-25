@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservar fechas en el hotel</title>
     <!-- Estilos -->
-    <link href="/estilos/reset.css" rel="stylesheet" type="text/css">
-    <link href="/estilos/estilos_reservar_hotel.css" rel="stylesheet" type="text/css">
+    <link href="/estilos/reset.css" rel="stylesheet" >
+    <link href="/estilos/estilos_reservar_hotel.css" rel="stylesheet" >
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -20,14 +20,14 @@
             <div id="contenedor_form_logo_boton">
                 <div id="contenedor_form">
                     <h1>Reserva en nuestro hotel</h1>
-                    <form action="" method="">
+                    <form action="" method=""id="formulario_cita">
                         <div class="contenedor_input">
                             <label for="dateDiaLlegada">Escoge el día de llegada</label>
-                            <input class="llenar" type="date" id="dateDiaLlegada" >
+                            <input class="llenar" type="date" id="dateDiaLlegada" required >
                         </div>
                         <div class="contenedor_input">
                             <label for="dateDiaSalida">Escoge el día de salida</label>
-                            <input class="llenar" type="date" id="dateDiaSalida" >
+                            <input class="llenar" type="date" id="dateDiaSalida" required>
                         </div>
                         <div class="contenedor_input">
                             <label for="txtDescripcion">Cuentanos sobre cuidados especiales de tu mascota</label>
@@ -48,5 +48,13 @@
         </div>
         </section>
     </main> 
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Sweetalert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+    <!-- validaciones -->
+    <script src="/validaciones/controlador_form_reservar_hotel.js"></script>
+
+    
 </body>
 </html>

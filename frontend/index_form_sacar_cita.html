@@ -22,7 +22,7 @@
                     <form action="" method="" id="formulario_cita">
                         <div class="contenedor_input">
                             <label for="dateDiaCita">Escoje el dia de tu cita</label>
-                            <input class="llenar" type="date" id="dateDiaCita" required>
+                            <input value="" class="llenar" type="date" id="dateDiaCita" required>
                         </div>
                         <div class="contenedor_input">
                             <label for="timeCita">Escoge la hora de tu cita</label>
@@ -30,7 +30,8 @@
                         </div>
                         <div class="contenedor_input">
                             <label for="Doctor">Escoge a tu veterinario de preferencia</label>
-                            <select class="llenar" name="nombre_Doc" id="Doctor">
+                            <select class="llenar" name="nombre_Doc" id="Doctor" required>
+                                <option value="">-----</option>
                                 <option value="Dra. María">Dra. María</option>
                                 <option value="Dr. Alexis">Dr. Alexis</option>
                                 <option value="Dra. Francis">Dra. Francis</option>
@@ -42,7 +43,7 @@
                             <textarea class="llenar" name="descripcion_cuidados" id="txtDescripcion" maxlength="500"></textarea>
                         </div>
                         <div id="contenedor_botones">
-                            <a href=""><button id="btn_Enviar" type="button"> Enviar </button></a>
+                            <button id="btn_Enviar" type="button"> Enviar </button>
                             <a href="/index-MokaLandingPage-SI.html"><button id="btn_Volver" type="button"> Volver a perfil </button></a>
                         </div>
                     </form>
@@ -53,6 +54,9 @@
         </div>
         </section>
     </main> 
+
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- Sweetalert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>   
     <!-- Controlador -->
