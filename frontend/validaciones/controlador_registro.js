@@ -6,6 +6,8 @@ const inputCedula = document.getElementById("cedula");
 const inputPassword = document.getElementById("password");
 const inputCorreo = document.getElementById("email");
 const inputDireccion = document.getElementById("address");
+const checkbox = document.getElementById('termsAcceptance');
+const tyc = document.getElementById('TyC');
 
 
 function validarCamposVacios() {
@@ -22,7 +24,7 @@ function validarCamposVacios() {
     }
     return error;
 }
-/* const validar_nombre = () => {
+const validar_nombre = () => {
     let error = false;
     let nombre = inputNombre.value;
     let expresion = /^[a-zA-Z]+$/;
@@ -49,7 +51,7 @@ const validar_apellidos = () => {
 const validar_numero = () => {
     let error = false;
     let numero = inputNumero.value;
-    let expresion = /^[0-9]{4}-[0-9]{4}$/;
+    let expresion = /^[\d]{4}-[\d]{4}$/;
     if (expresion.test(numero) == false) {
         inputNumero.classList.add("error");
         error = true;
@@ -61,7 +63,7 @@ const validar_numero = () => {
 const validar_cedula = () => {
     let error = false;
     let cedula = inputCedula.value;
-    let expresion = /^[1-9]{1}-[0-9]{4}-[0-9]{4}$/;
+    let expresion = /^[1-9]{1}-[\d]{4}-[\d]{4}$/;
     if (expresion.test(cedula) == false) {
         inputCedula.classList.add("error");
         error = true;
@@ -73,8 +75,7 @@ const validar_cedula = () => {
 function validarCorreo() {
     let error = false;
     let texto_usuario = inputCorreo.value;
-    let expresion_correo = /[a-zA-Z0-9].+@[a-zA-Z0-9]+.[a-z]+/;
-
+    let expresion_correo = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
     if (expresion_correo.test(texto_usuario) == false) {
         error = true;
         inputCorreo.classList.add("error");
@@ -82,7 +83,16 @@ function validarCorreo() {
         inputCorreo.classList.remove("error");
     }
     return error;
-} */
+}
+checkbox.addEventListener("change", validaCheckbox, false);
+function validaCheckbox(){
+    let error;
+    let checked = checkbox.checked;
+    if(checked==false){
+        error = true;
+    }
+    return error;
+}
 
 let limpiarCampos =()=>{
     inputNombre.value="";
@@ -92,16 +102,18 @@ let limpiarCampos =()=>{
     inputPassword.value="";
     inputCorreo.value="";
     inputDireccion.value="";
+    checkbox.checkbox=false
 
 }
 
 let obtener_datos = () => {
     let error_campos_vacios =validarCamposVacios();
-/*     let error_nombre = validar_nombre();
+    let error_nombre = validar_nombre();
     let error_apellidos = validar_apellidos();
     let error_numero = validar_numero();
     let error_cedula = validar_cedula();
-    let error_correo = validarCorreo(); */
+    let error_correo = validarCorreo();
+    let error_checkbox=validaCheckbox();
     
 
     if(error_campos_vacios){
@@ -110,14 +122,44 @@ let obtener_datos = () => {
             title:"Campos Vacios",
             text: "Todos los campos son obligatorios"
         });
+    }else if (error_nombre) {
+        Swal.fire({
+            icon: "warning",
+            title: "Nombre inválido",
+            text: "El nombre no puede llevar numeros"
+        });   
+    }else if (error_apellidos) {
+        Swal.fire({
+            icon: "warning",
+            title: "Apellidos inválidos",
+            text: "Los apellidos no pueden llevar numeros"
+        });
     }
-/*     else if (error_correo) {
+    else if (error_numero) {
+        Swal.fire({
+            icon: "warning",
+            title: "Número inválido",
+            text: "El formato permitido es 8888-8888"
+        });  
+    }    else if (error_cedula) {
+        Swal.fire({
+            icon: "warning",
+            title: "Cedula inválida",
+            text: "El formato permitido es 1-1111-1111"
+        });  
+    }else if (error_correo) {
         Swal.fire({
             icon: "warning",
             title: "Correo inválido",
             text: "El formato permitido es example@example.com"
         });
-    } */ else {       
+    }else if (error_checkbox) {
+        Swal.fire({
+            icon: "warning",
+            title: "Falto algo...",
+            text: "Debe aceptar los terminos y condiciones"
+        });
+    }else {       
         let nombre =inputNombre.value;
         let apellidos =inputApellidos.value;
         let numero =inputNumero.value;
