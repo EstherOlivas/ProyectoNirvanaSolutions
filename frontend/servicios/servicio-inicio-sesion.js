@@ -4,6 +4,7 @@ const validar_usuario= async(pcorreo,pcontrasenna)=>{
         url:"http://localhost:8000/api/validar_credenciales",
         responseType:"json",
         data:{
+            
             correo:pcorreo,
             contrasenna:pcontrasenna
         }
@@ -14,8 +15,6 @@ const validar_usuario= async(pcorreo,pcontrasenna)=>{
                 text:"La contraseña o el correo son incorrectos",
                 icon:"warning"
             });
-
-
         }else{
             sessionStorage.setItem("conectado",res.data.resultado);
             /* sessionStorage.setItem("rol","res.data.usuario.rol"); */

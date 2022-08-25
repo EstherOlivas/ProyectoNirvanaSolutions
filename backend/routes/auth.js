@@ -1,10 +1,10 @@
 
 const express = require('express');
-const Usuario = require("../models/usuario");
+const usuario = require("../models/usuario");
 const router = express.Router();
 
 router.post("/validar_credenciales",(req,res)=>{
-    Usuario.findOne({cedula:req.body.cedula
+    usuario.findOne({correo:req.body.correo
     }).then(
         function(usuario) {
             if(usuario){
@@ -17,11 +17,6 @@ router.post("/validar_credenciales",(req,res)=>{
                     res.json({
                         resultado:false,
                         msg:"Contraseña incorrecta"
-                    });
-                    Swal.fire({
-                        title:"Datos incorrectos",
-                        text:"La contraseña incorrecta",
-                        icon:"warning"
                     });
                 }
             }else{

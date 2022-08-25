@@ -48,7 +48,7 @@ function guardarinfo () {
             text: "El formato permitido es example@example.com"
         });
     } else {      
-        let correo=inputCorreo ;
+        let correo=inputCorreo.value;
         let contrasenna = inputContrasenna.value;   
         validar_usuario(correo,contrasenna);
     }
