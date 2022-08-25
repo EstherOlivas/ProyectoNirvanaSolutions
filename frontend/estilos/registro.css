@@ -107,7 +107,10 @@ button{
     border: #00FFA0;
     font-weight: bold;
 }
+#termsAcceptance:hover{
+    cursor: pointer;
 
+}
 .error{
     border: 2px solid red;
 }

@@ -39,3 +39,4 @@ const registrar_usuario = async(pnombre,papellidos,pnumero,pcedula,pcontrasenna,
     });
 
 }
+

@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio Sesion</title>
         <link rel="stylesheet" href="estilos/estilo_inicio_sesion.css" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -16,32 +19,34 @@
             <header>Iniciar sesion como</header>
 
             <div id="texto">
-                <p>Se iniciaría sesion como usuario, secretario, manager, doctor...</p>
+                <p>Se iniciaría sesion como usuario, secretario, doctor...</p>
             </div>
-            
+            <div id="contenedor">
             <form action="" id="formulario">
-                <div class="formulario">
-                    <input type="text" id="txtcorreo" maxlength="100" placeholder="Correo electronico o numero de telefono" required >
+                <div>
+                    <input type="text" id="txtcorreo" maxlength="100" placeholder="Correo electronico" required >
                 </div>
-                <div class="formulario">
-                    <input type="text" id="txtcontrasenna" maxlength="100"  placeholder="Contraseña" required >
-                </div>    
+                <div >
+                    <input type="password" id="txtcontrasenna" maxlength="100"  placeholder="Contraseña" required >
+                </div>               
+                <section id="btncontenedor"> 
+                    <div class="boton">
+                        <button type="button" id="btninicio" class="button">Iniciar sesion</button>
+                    </div>
+                    <div class="boton">
+                        <a href="index_recuperar_contra.html" id="btnolvidar">¿Olvidaste tu contraseña?</a>    
+                    </div>   
+                </section>
             </form>
-            <section id=" btncontenedor"> 
-                <div class="boton">
-                    <button type="button" id="btninicio" class="button">Iniciar sesion</button>
-                </div>
-                <div class="boton">
-                    <a href="index_recuperar_contra.html" > <button type="button" id="btnolvidar" class="button">¿Olvidaste tu contraseña?</button></a>    
-                </div>  
-                <div class="boton">
-                    <a href="index_recuperar_contra.html" > <button type="button" id="btnnueva" class="button">Crear nueva contraseña</button></a>    
-                </div>   
-            </section> 
-            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"> </script>
-            <script src="validaciones/controlador_inicio_sesion.js"> </script>     
-            
+            </div>
         </main>
+            <!-- Axios -->
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <!-- Sweet Alert -->
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"> </script>
+
+            <script src="/validaciones/controlador_inicio_sesion.js"></script>     
+            <script src="/servicios/servicio-inicio-sesion.js"></script>  
     </body>
 
 </html>

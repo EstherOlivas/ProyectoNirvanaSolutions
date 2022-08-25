@@ -33,4 +33,31 @@ router.post("/registrar_usuario",(req,res)=>{
     });
 });
 
+router.get("/buscar_persona_correo",(req,res)=>{
+    let correo = req.query.correo;
+    Usuario.find({correo: correo},(error,usuarioDB)=>{
+        if (error) {
+            res.status(500).json({
+                resultado:false,    
+                msj:"Ocurrio el siguiente error",
+                error
+            });
+        }else{
+            if(usuarioDB==""){
+                res.status(200).json({
+                    resultado:true,
+                    msj: "Usuario no registrada",
+                });  
+            }
+            else{
+                res.status(200).json({
+                    resultado:true,
+                    msj: "Usuario encontrada",
+                    Usuario:usuarioDB
+                });
+            }
+        }
+    });
+});
+
 module.exports = router;

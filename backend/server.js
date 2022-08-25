@@ -5,6 +5,7 @@ const cors= require("cors");
 require("dotenv").config();
 
 const usuarios = require("./routes/usuarios");
+const auth = require("./routes/auth");
 
 
 const app= express();
@@ -29,6 +30,7 @@ mongoose.connect(process.env.MONGO_URL,{
 );
 
 app.use("/api",usuarios); 
+app.use("/api",auth);
 
 app.listen(process.env.PORT, ()=>{
     console.log(`Aplicacion levantada en el puerto ${process.env.PORT}`)

@@ -102,8 +102,7 @@ let limpiarCampos =()=>{
     inputPassword.value="";
     inputCorreo.value="";
     inputDireccion.value="";
-    checkbox.checkbox=false
-
+    checkbox.checked=false
 }
 
 let obtener_datos = () => {
@@ -168,12 +167,13 @@ let obtener_datos = () => {
         let correo =inputCorreo.value;
         let direccion = inputDireccion.value;
         registrar_usuario(nombre, apellidos, numero, cedula, contrasenna, correo, direccion);
+        limpiarCampos();
+        window.location.href="index-MokaLandingPage-SI.html";
         Swal.fire({
             icon: "success",
             title: "Éxito",
             text: "La información se registró de forma correcta",
         });
-        limpiarCampos();
 
     }
 } 

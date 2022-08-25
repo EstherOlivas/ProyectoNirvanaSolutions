@@ -1,5 +1,7 @@
 const btnInicio = document.getElementById("btninicio");
 const inputCorreo = document.getElementById("txtcorreo");
+const inputContrasenna = document.getElementById("txtcontrasenna");
+
 
 function validarCamposVacios() {
     let error = false;
@@ -18,7 +20,7 @@ function validarCamposVacios() {
 function validarCorreo() {
     let error = false;
     let texto_usuario = inputCorreo.value;
-    let expresion_correo = /[a-zA-Z0-9].+@[a-zA-Z0-9]+.[a-z]+/;
+    let expresion_correo = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
     if (expresion_correo.test(texto_usuario) == false) {
         error = true;
@@ -45,12 +47,10 @@ function guardarinfo () {
             title: "Correo inválido",
             text: "El formato permitido es example@example.com"
         });
-    } else {        
-        Swal.fire({
-            icon: "success",
-            title: "exito",
-            text:"informacion Almacenada",
-    });
+    } else {      
+        let correo=inputCorreo ;
+        let contrasenna = inputContrasenna.value;   
+        validar_usuario(correo,contrasenna);
     }
 } 
 btnInicio.addEventListener("click", guardarinfo)
