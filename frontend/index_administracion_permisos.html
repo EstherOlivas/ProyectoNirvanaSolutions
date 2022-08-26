@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrar Usuarios</title>
+    <link rel="stylesheet" href="estilos/administrarUsuarios.css">
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<header>
+    <h1>Administrar Permisos</h1>
+</header>
+<body>
+    <main>
+    <div>    
+        <div id="contenedorTabla" style="display: inline-block;">
+            <table id="informacion-registro">
+                <thead> 
+                    <tr>
+                        <th class="tb"> Nombre </th>
+                    </tr>          
+                </thead>
+                <tbody ></tbody>
+            </table>  
+            <div id="contenedor_botones">
+                <a href="/index_perfil_admin.html"> <button class="volver" type="button"> Volver </button> </a>
+            </div>
+    
+        </div> 
+        <div id="contenedor" style="display: inline-block;">
+        <form action="" id="formulario">
+            <div>
+                <input type="text" id="txtpermiso" maxlength="100" required >
+            </div>           
+            <section id="btncontenedor"> 
+                <div class="boton">
+                    <button type="button" id="btnRegistrar" class="button">Registrar </button>
+                </div>  
+            </section>
+        </form>
+        </div>
+    </div>
+ 
+
+  
+</main>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- SweetAlert -->    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="/validaciones/controlador_rol.js"></script>
+    <script src="/servicios/servicio_permisos.js"></script>
+    <script src="/validaciones/controlador_administrar_permisos.js"></script>
+
+
+
+
+</body>
+</html>

@@ -51,7 +51,6 @@ function valida_salida() {
       {
         error=true;
         inputSalida.classList.add("error");
-        console.log("error1");
 
      }
      return error;
@@ -91,13 +90,6 @@ const enviar_info = () =>{
             text: "La fecha de salida no puede ser antes de la llegada"
         });
     }
-/*     else if(error_salida_luego_entrada){
-        Swal.fire({
-            icon: "warning",
-            title:"Salida invalida",
-            text: "La fecha de salida no puede ser antes de la llegada"
-        });
-    } */
     else{        
         Swal.fire({
             icon: "success",

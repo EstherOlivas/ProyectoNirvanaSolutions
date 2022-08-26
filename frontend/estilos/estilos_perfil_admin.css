@@ -33,7 +33,7 @@ button:hover{
     font-size: 25px;
     cursor: pointer;
     border: none;
-    border-radius: 30px;
+    border-radius: 7px;
     background-color: #00FFA0;
 }
 
@@ -52,9 +52,9 @@ button:hover{
 } 
 
 #contenedor_botones{
-    position: fixed;
-    bottom: 100px;
-    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: end;
 }
 
 #btn-volver{
@@ -78,6 +78,27 @@ button:hover{
     font: weight 900px;
 }
 
+
+#btn_cerrar_sesion{
+    height: 65px;
+    width: 335px;
+    font-size: 16px;  
+    border-radius: 7px;
+    margin: 10px;
+    margin-right: 20px;
+    border: 2px solid #A000FF;
+    color: #A000FF;
+}
+
+#btn_cerrar_sesion:hover{
+    cursor: pointer;
+    background-color: #00FFA0;
+    color: #A000FF;
+    font-size: 26px;
+    font-weight: bold;
+    border: #00FFA0;
+    font: weight 900px;
+}
 /* Responsive */
 
 @media only screen and (max-width:650px){

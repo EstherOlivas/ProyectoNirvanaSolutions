@@ -2,6 +2,8 @@ const btnInicio = document.getElementById("btninicio");
 const inputCorreo = document.getElementById("txtcorreo");
 const inputContrasenna = document.getElementById("txtcontrasenna");
 
+let rol;
+
 
 function validarCamposVacios() {
     let error = false;
@@ -49,8 +51,10 @@ function guardarinfo () {
         });
     } else {      
         let correo=inputCorreo.value;
-        let contrasenna = inputContrasenna.value;   
-        validar_usuario(correo,contrasenna);
+        let contrasenna = inputContrasenna.value;
+        
+   
+        validar_usuario(correo,contrasenna, rol);
     }
 } 
 btnInicio.addEventListener("click", guardarinfo)

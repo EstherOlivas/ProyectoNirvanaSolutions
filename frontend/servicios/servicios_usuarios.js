@@ -23,8 +23,6 @@ const registrar_usuario = async(pnombre,papellidos,pnumero,pcedula,pcontrasenna,
                         icon: "warning"
                     });
                     break;
-
-
             }
         } else {
             Swal.fire({
@@ -32,6 +30,7 @@ const registrar_usuario = async(pnombre,papellidos,pnumero,pcedula,pcontrasenna,
                 text: "Usuarios guardado correctamente",
                 icon: "success"
             });
+            window.location.href="index_inicio_sesion.html";
         }
     }).
     catch((err) => {
@@ -39,4 +38,3 @@ const registrar_usuario = async(pnombre,papellidos,pnumero,pcedula,pcontrasenna,
     });
 
 }
-

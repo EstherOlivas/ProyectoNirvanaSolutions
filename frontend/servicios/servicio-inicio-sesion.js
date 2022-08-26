@@ -16,9 +16,8 @@ const validar_usuario= async(pcorreo,pcontrasenna)=>{
                 icon:"warning"
             });
         }else{
-            sessionStorage.setItem("conectado",res.data.resultado);
-            /* sessionStorage.setItem("rol","res.data.usuario.rol"); */
-            /* sessionStorage.setItem("rol","admin"); */
+            localStorage.setItem("conectado",res.data.resultado);
+            localStorage.setItem("rol",res.data.usuario.rol);
             window.location.href="index-MokaLandingPage-SI.html";
             Swal.fire({
                 icon: "success",

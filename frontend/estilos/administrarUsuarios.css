@@ -22,6 +22,7 @@ table{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
 }
 
@@ -30,6 +31,7 @@ table{
     margin-top: 100px;
     width: 1600px;
     height: auto;
+ 
 }
 
 /* Estilos de la tabla */
@@ -99,4 +101,8 @@ button{
     font-size: 20px;
     font-weight: bold;
     
+}
+
+.error{
+    border: 2px solid red;
 }

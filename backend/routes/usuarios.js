@@ -17,11 +17,12 @@ router.post("/registrar_usuario",(req,res)=>{
     });
     nuevo_usuario.save((error,usuarioDB)=>{
         if (error) {
-            res.status(500).json({
+            res.status(200).json({
                 resultado:false,
                 msj: "No se pudo hacer el registro",
                 error
             });
+            console.log(error);
         }
         else{
             res.status(200).json({
@@ -33,5 +34,32 @@ router.post("/registrar_usuario",(req,res)=>{
     });
 });
 
+
+/* router.get("/buscar_persona_correo",(req,res)=>{
+    let correo = req.query.correo;
+    Usuario.find({correo: correo},(error,usuarioDB)=>{
+        if (error) {
+            res.status(200).json({
+                resultado:false,    
+                msj:"Ocurrio el siguiente error",
+                error
+            });
+        }else{
+            if(usuarioDB==""){
+                res.status(200).json({
+                    resultado:true,
+                    msj: "Persona no registrada",
+                });  
+            }
+            else{
+                res.status(200).json({
+                    resultado:true,
+                    msj: "Persona encontrada",
+                    Usuario:usuarioDB
+                });
+            }
+        }
+    });
+}); */
 
 module.exports = router;

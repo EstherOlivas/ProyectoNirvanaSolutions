@@ -32,7 +32,7 @@ button:hover{
     font-size: 25px;
     cursor: pointer;
     border: none;
-    border-radius: 30px;
+    border-radius: 7px;
     background-color: #00FFA0;
 
 }
@@ -57,8 +57,8 @@ button:hover{
     border-radius: 7px;
     margin: 10px;
     background-color: white;
-    border: 2px solid #00FFA0;
-    color: #00FFA0;
+    border: 2px solid #A000FF;
+    color: #A000FF;
     
 }
 #btn_Volver:hover{
@@ -95,4 +95,24 @@ button:hover{
         margin-top: 20px;
     }
 
+}
+#btn_cerrar_sesion{
+    height: 45px;
+    width: 235px;
+    font-size: 16px;  
+    border-radius: 7px;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid #A000FF;
+    color: #A000FF;
+}
+
+#btn_cerrar_sesion:hover{
+    cursor: pointer;
+    background-color: #00FFA0;
+    color: #A000FF;
+    font-size: 26px;
+    font-weight: bold;
+    border: #00FFA0;
+    font: weight 900px;
 }
