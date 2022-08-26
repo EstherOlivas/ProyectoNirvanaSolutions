@@ -44,7 +44,7 @@ input {
 
 .button {
     font-family: 'Montserrat', sans-serif; 
-    height: 30px;
+ /*    height: 30px;
     width: 10%;
     font-size: 12px;  
     border-radius: 7px;
@@ -55,30 +55,43 @@ input {
     position: relative;
     margin-top: 60px;
     float: right;
-    left: 250px;
+    left: 250px; */
+    
+    height: 45px;
+    width: 235px;
+    font-size: 16px;  
+    border-radius: 7px;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid #A000FF;
+    color: #A000FF;
 }
 
 
 
 #btnguardar:hover {
    
-    background-color: #00fa9a;
-    color: #4682b4; 
-    border-color:  #00fa9a;
-    font-weight: bold; 
-} 
-
-#btnvolver:hover {
-    color: #6a5acd;
-    border-color:   #6a5acd; 
+    cursor: pointer;
+    background-color: #00FFA0;
+    color: #A000FF;
+    font-size: 26px;
     font-weight: bold;
-    background-color: transparent;
-    position: relative;
-    left: 250px;
+    border: #00FFA0;
+    font: weight 900px;
 } 
 
-#btnguardar:hover,
 #btnvolver:hover {
     cursor: pointer;
+    background-color: #00FFA0;
+    color: #A000FF;
+    font-size: 26px;
+    font-weight: bold;
+    border: #00FFA0;
+    font: weight 900px;
+} 
+#contenedor_botones{
+    width: 80%;
+    display: flex;
+    justify-content: right;
 }
 

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/public/css/reset.css" />
         <link rel="stylesheet" href="estilos/nuevo.estilo.personal.info.css" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -28,25 +27,43 @@
                         <label for="txtnombre">Nombre</label><br />
                         <input type="nombre" nonmbre="" id="txtnombre" required />
                     </div>
+                    <div class="formulario">
+                        <label for="txtapellidos">Apellidos</label><br />
+                        <input type="nombre" nonmbre="" id="txtapellidos" required />
+                    </div>
     
                     <div class="formulario">
                         <label for="txtdireccion">Direccion</label><br />
                         <input type="text" direccion="" id="txtdireccion" required />
+                    </div>
+                    <div class="formulario">
+                        <label for="txtcedula">Cedula</label><br />
+                        <input type="text" direccion="" id="txtcedula" required />
                     </div>
     
                     <div class="formulario">
                         <label for="txtnumero">Numero de Telefono</label><br />
                         <input type="text" numero="" id="txtnumero" required />
                     </div>
-                    <form>
-                        <input class="button" type="button" id="btnvolver" value="Volver" onclick="history.back(-1)">
-                    </form>  
-                    <button id="btnguardar" type="button" class="button">Guardar</button>
+                    <div id="contenedor_botones">
+                        <button id="btnguardar" type="button" class="button">Actualizar</button>
+                        <form >
+                            <input class="button" type="button" id="btnvolver" value="Volver" onclick="history.back(-1)">
+                        </form>  
+                    </div>
                 </form>
             </section>
         </main>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"> </script>
-        <script src= "validaciones/controlador.personal.info.js"> </script>
+
+        <!-- Axios -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <!-- SweetAlert -->    
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- servicios -->
+        <script src="/servicios/servicio_info_personal.js"></script>
+        <!-- VAlidaciones -->
+        <script src= "validaciones/controlador_info_personal.js"> </script>
         <script src="/validaciones/controlador_rol.js"></script>
 
     </body>

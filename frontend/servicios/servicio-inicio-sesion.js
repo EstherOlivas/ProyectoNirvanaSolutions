@@ -18,6 +18,8 @@ const validar_usuario= async(pcorreo,pcontrasenna)=>{
         }else{
             localStorage.setItem("conectado",res.data.resultado);
             localStorage.setItem("rol",res.data.usuario.rol);
+            localStorage.setItem("correo",res.data.usuario.correo);
+
             window.location.href="index-MokaLandingPage-SI.html";
             Swal.fire({
                 icon: "success",

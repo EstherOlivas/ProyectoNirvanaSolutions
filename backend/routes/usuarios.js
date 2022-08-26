@@ -35,9 +35,9 @@ router.post("/registrar_usuario",(req,res)=>{
 });
 
 
-/* router.get("/buscar_persona_correo",(req,res)=>{
+router.get("/buscar_persona_correo",(req,res)=>{
     let correo = req.query.correo;
-    Usuario.find({correo: correo},(error,usuarioDB)=>{
+    Usuario.find({correo:correo},(error,usuarioDB)=>{
         if (error) {
             res.status(200).json({
                 resultado:false,    
@@ -60,6 +60,26 @@ router.post("/registrar_usuario",(req,res)=>{
             }
         }
     });
-}); */
+});
+
+router.put("/modificar",(req,res)=>{
+    let body = req.body;
+    Usuario.updateOne({_id:body._id},{$set:req.body},function(error,info){
+        if (error) {
+            res.status(200).json({
+                resultado:false,
+                msj: "No se pudo actualizar la persona",
+                error
+            });
+        }else {
+            res.status(200).json({
+                resultado:true,
+                msj: "Actualización exitosa",
+                info
+            });  
+        }
+    });
+});
+
 
 module.exports = router;
