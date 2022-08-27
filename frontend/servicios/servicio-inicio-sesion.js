@@ -16,10 +16,13 @@ const validar_usuario= async(pcorreo,pcontrasenna)=>{
                 icon:"warning"
             });
         }else{
-            localStorage.setItem("conectado",res.data.resultado);
-            localStorage.setItem("rol",res.data.usuario.rol);
-            localStorage.setItem("correo",res.data.usuario.correo);
 
+            localStorage.setItem("conectado",res.data.resultado);
+            localStorage.setItem("rol",JSON.stringify(res.data.usuario.rol));
+            localStorage.setItem("correo",res.data.usuario.correo);
+            localStorage.setItem("_id",res.data.usuario._id);
+/*             console.log(res.data.usuario.rol);
+ */
             window.location.href="index-MokaLandingPage-SI.html";
             Swal.fire({
                 icon: "success",

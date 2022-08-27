@@ -39,3 +39,24 @@ const obtener_persona_correo= async(correo)=>{
         console.log(error);
     }
 }
+const eliminar_persona= async(p_id)=>{
+    await axios({
+        method:"delete",
+        url:"http://localhost:8000/api/eliminar",
+        data:{
+            _id:p_id
+        },
+        responseType:"json"
+    }).then((res)=>{
+        Swal.fire({
+            title:"Operacion exitosa",
+            text: "Usuario eliminado correctamente",
+            icon:"success"
+        });
+    }).then(()=>{
+        localStorage.clear();
+        window.location.href="index-MokaLandingPage.html";
+    }).catch((error)=>{
+        console.log(error);
+    });
+}

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Mascota</title>
     <link rel="stylesheet" href="estilos/RegistroMascota.css">
-    <link rel="stylesheet" href="/reset.css.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&family=Montserrat:wght@300;900&display=swap" rel="stylesheet">
     
 </head>
@@ -18,27 +17,27 @@
             <div id="contenedor_form_logo_boton">
                 <div class="middlePage"  id="contenedor_form">
                     <h2>Ingresa los datos de tu mascota</h2>
-                    <form action="" method="">
+                    <form action="" method=""id="contenedor_formulario">
                         <div class="contenedor_input">
                             <label for="Nombre"> Nombre </label>
-                            <input class="llenar" type="text" id="nombreMascota" required>
+                            <input  type="text" id="nombreMascota" required>
                         </div>
                         <div class="contenedor_input">
                             <label for="race"> Raza </label>
-                            <input class="llenar" type="text" id="petsRace"required>
+                            <input  type="text" id="petsRace" required>
                         </div>
                         <div class="contenedor_input">
                             <label for="dateBirthdayPet"> Fecha de nacimiento </label>
-                            <input class="llenar" type="date" id="diaDeNacimiento"required>
+                            <input  type="date" id="diaDeNacimiento" required>
                         </div>
                         <div class="contenedor_input">
                             <label for="fotoMascota"> Carga tu foto favorita de esta mascota </label>
-                            <input class="llenar" type="file" id="inputFotoMascota" accept="image/*" >
+                            <input  type="file" id="inputFotoMascota" accept="image/*" >
                             
                         </div>
                         <div class="contenedor_input">
                             <label for="txtDescripcion">Cuentanos sobre cuidados especiales de tu mascota</label>
-                            <textarea class="llenar" name="descripcion_cuidados" id="txtDescripcion" maxlength="600"></textarea>
+                            <textarea  name="descripcion_cuidados" id="txtDescripcion" maxlength="600" ></textarea>
                         </div>
 
                     </form>
@@ -49,16 +48,24 @@
                  </div>
             </div>
             <div id="contenedor_botones">
-                <a href=""> <button id="btn-enviar" type="button"> Enviar </button> </a>
-                <a href=""> <button id="btn-volver" type="button"> Volver a perfil </button> </a>
+                <button id="btn-enviar" type="button"> Enviar </button> 
+                <a href="/index_perfil_cliente.html"> <button id="btn-volver" type="button"> Volver a perfil </button> </a>
             </div>
             
         </div>
         </section>
     </main> 
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Sweet Alet -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <!-- Servicios -->
+    <script src="/servicios/servicio_mascotas.js"></script>
+    <!-- Validaciones -->
     <script src="/validaciones/RegistroMascota.js"></script>
     <script src="/validaciones/controlador_rol.js"></script>
+
+
 
 
 </body>

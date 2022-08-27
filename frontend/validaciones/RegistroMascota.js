@@ -11,12 +11,12 @@ const inputRaza = document.getElementById("petsRace");
 //ligar el espacio de la fecha de nacimiento.
 const inputFechaNacimiento = document.getElementById("diaDeNacimiento")
 
-
+let _id=localStorage.getItem("_id");
 // Validar campos en blanco
 
 function validarCamposVacios(){
     let error = false;
-    let campos_requeridos = document.querySelectorAll("#contenedor_form [required]");
+    let campos_requeridos = document.querySelectorAll("#contenedor_formulario [required]");
     for (let i = 0; i < campos_requeridos.length; i++) {
         if (campos_requeridos[i].value == "") {
             error = true;
@@ -27,6 +27,11 @@ function validarCamposVacios(){
     }
     return error;
 }
+let limpiarCampos =()=>{
+    inputNombre.value="";
+    inputRaza.value="";
+    inputFechaNacimiento.value="";
+}
 
 function enviarInformacion() {
     let error_campos_vacios = validarCamposVacios();
@@ -34,15 +39,16 @@ function enviarInformacion() {
     if (error_campos_vacios) {
         Swal.fire({
             icon: "warning",
-            title: "Campos vacios",
-            text: "Ops! Olvidaste mencionarnos algo."
+            title:"Campos Vacios",
+            text: "Todos los campos son obligatorios"
         });
     } else {
-        Swal.fire({
-            icon: "success",
-            title: "Completado!",
-            text: "Mascota Registrada"
-        });
+        let nombreMascota=inputNombre.value;
+        let raza=inputRaza.value;
+        let nacimiento=inputFechaNacimiento.value;
+
+        registrar_mascota(_id,nombreMascota, raza, nacimiento);
+        limpiarCampos();
     }
 }
 btnEnviar.addEventListener("click", enviarInformacion);

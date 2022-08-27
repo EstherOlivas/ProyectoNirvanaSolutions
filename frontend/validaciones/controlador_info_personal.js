@@ -1,5 +1,6 @@
 let correo=localStorage.getItem("correo")
 const btn_guardar = document.querySelector("#btnguardar");
+const btn_eliminar = document.querySelector("#btneliminar");
 const inputCorreo = document.querySelector("#txtcorreo");
 const inputNombre = document.querySelector("#txtnombre");
 const inputApellidos = document.querySelector("#txtapellidos");
@@ -153,5 +154,10 @@ let obtener_datos = () => {
 
     }
 } 
+
+const eliminar=()=>{
+    eliminar_persona(_id);
+}
+btn_eliminar.addEventListener("click",eliminar);
 btn_guardar.addEventListener("click", obtener_datos)
 llenar_campos();

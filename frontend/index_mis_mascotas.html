@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis mascotas</title>
+    <link rel="stylesheet" href="/estilos/reset.css">
+    <link rel="stylesheet" href="/estilos/estilos_citas_secretaria.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1>Mis mascotas</h1>
+        <img src="/imagenes/imagotipo.jpeg" alt="imagotipo MOKA" width="300px">
+    </header>
+    <main>
+        <div id="contenerdor_tabla_ver">
+            <table id="informacion_citas">
+                <thead>
+                    <tr>
+                        <th id="titulo_fecha">Nombre</th>
+                        <th>Raza</th>
+                        <th class="titulo">Nacimiento</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+
+            </table>
+            
+        </div>
+        <div id="contenedor_boton">
+            <a href="/index_perfil_cliente.html"> <button id="btn-volver" type="button"> Volver al perfil </button> </a>
+        </div>
+    </main>
+    <script src="/validaciones/controlador_rol.js"></script>
+
+</body>
+</html>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Servicios -->
+    <script src="/servicios/servicio_mascotas.js"></script>
+    <!-- Validaciones -->
+    <script src="/validaciones/controlador_mis_mascotas.js"></script>
+    <script src="/validaciones/controlador_rol.js"></script>

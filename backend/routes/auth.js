@@ -4,8 +4,9 @@ const usuario = require("../models/usuario");
 const router = express.Router();
 
 router.post("/validar_credenciales",(req,res)=>{
-    usuario.findOne({correo:req.body.correo
-    }).then(
+    usuario.findOne({correo:req.body.correo})
+    .populate("rol").
+    then(
         function(usuario) {
             if(usuario){
                 if(usuario.contrasenna==req.body.contrasenna){

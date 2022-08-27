@@ -1,4 +1,7 @@
 const btn_enviar = document.getElementById("btn-enviar");
+const sltRol = document.getElementById("rol");
+const divrol = document.getElementById("divrol");
+
 const inputNombre = document.getElementById("name");
 const inputApellidos = document.getElementById("Apellidos");
 const inputNumero = document.getElementById("numero");
@@ -94,6 +97,37 @@ function validaCheckbox(){
     return error;
 }
 
+const dropdownRol= async()=>{
+    let rol = JSON.parse(localStorage.getItem("rol"))
+    listado_de_roles = await roles_BD()
+    console.log(rol)
+try {
+    if (rol[0]!=null&&rol[0].nombre=="Admin") {
+        sltRol.style.visibility="visible"  
+        sltRol.style.height="45px"
+        sltRol.require="required"  
+        var option = document.createElement('option')
+            option.value = ""
+            option.text = "Selecione el rol"
+            sltRol.appendChild(option)
+        for (let i = 0; i < listado_de_roles.length; i++) {
+            var option = document.createElement('option')
+            option.value = listado_de_roles[i]['_id']
+            option.text = listado_de_roles[i]['nombre']
+            sltRol.appendChild(option)
+          }
+    }else{
+        sltRol.style.visibility="hidden"
+        divrol.style.visibility="hidden"
+    }
+} catch (error) {
+    sltRol.style.visibility="hidden"
+    divrol.style.visibility="hidden"
+}
+
+
+}
+
 let limpiarCampos =()=>{
     inputNombre.value="";
     inputApellidos.value="";
@@ -166,8 +200,18 @@ let obtener_datos = () => {
         let contrasenna =inputPassword.value;
         let correo =inputCorreo.value;
         let direccion = inputDireccion.value;
-        registrar_usuario(nombre, apellidos, numero, cedula, contrasenna, correo, direccion);
+        let rol
+
+        if (sltRol.options.length>1&&sltRol.options[sltRol.selectedIndex].text!="") {
+            rol=sltRol.options[sltRol.selectedIndex].text
+        }
+        else{
+            rol="Cliente"
+        }
+
+        registrar_usuario(nombre, apellidos, numero, cedula, contrasenna, correo, direccion, rol);
 
     }
 } 
+dropdownRol()
 btn_enviar.addEventListener("click", obtener_datos)

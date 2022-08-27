@@ -8,6 +8,8 @@ const inputHora =document.getElementById("timeCita");
 const sctDoctor = document.getElementById("Doctor");
 /* cuidados */
 const txtarea = document.getElementById("txtDescripcion");
+let _id=localStorage.getItem("_id");
+
 
 function valida_CamposVacios() {
     let error = false;
@@ -70,12 +72,14 @@ const enviar_info = () =>{
         });
     }
     else{        
-        Swal.fire({
-            icon: "success",
-            title:"Cita Agendada",
-            text: "Se le enviara un correo con la confimación de su cita"
-    });
-    limpiarCampos();
+        let dia= inputFecha.value;
+        let hora=inputHora.value;
+        let doctor=sctDoctor.value;
+        let descripcion=txtarea.value;
+
+        registrar_cita(dia,hora,doctor,descripcion);
+        citas_usuario(_id);
+        limpiarCampos();
     }
 
 } 

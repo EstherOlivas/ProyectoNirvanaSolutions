@@ -70,8 +70,6 @@ button {
     border-color:   #6a5acd; 
     font-weight: bold;
     background-color: transparent;
-    position: relative;
-    left: 250px;
 } 
 #btnguardar:hover,
 #btnvolver:hover {

@@ -4,11 +4,11 @@ const mongoose= require("mongoose");
 const cors= require("cors");
 require("dotenv").config();
 
+const cita = require("./routes/citas");
 const usuarios = require("./routes/usuarios");
 const auth = require("./routes/auth");
 const rol = require("./routes/roles");
 const permiso = require("./routes/permisos");
-
 
 
 const app= express();
@@ -36,6 +36,7 @@ app.use("/api",usuarios);
 app.use("/api",auth);
 app.use("/api",rol);
 app.use("/api",permiso);
+app.use("/api",cita);
 
 app.listen(process.env.PORT, ()=>{
     console.log(`Aplicacion levantada en el puerto ${process.env.PORT}`)

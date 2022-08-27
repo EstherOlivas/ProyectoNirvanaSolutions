@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrar Usuarios</title>
 
-    <link rel="stylesheet" href="estilos/estilo.permisos.css">
+    <link rel="stylesheet" href="estilos/estilo.roles.css">
     <link rel="stylesheet" href="estilos/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 </head>
 <header>
-    <h1>Administrar Permisos</h1>
+    <h1>Administrar Roles</h1>
 </header>
 <body>
     <main>
@@ -23,9 +23,10 @@
                     <thead> 
                         <tr>
                             <th class="tb"> Nombre </th>
+                            <th class="tb"> Acción </th>
                         </tr>          
                     </thead>
-                    <tbody ></tbody>
+                    <tbody id="tbodyRoles"></tbody>
                 </table>  
             </div> 
         </div>
@@ -36,12 +37,12 @@
             <div id="contenedor">
                 <form action="" id="formulario">
                     <div>
-                        <h2>Registrar Permiso</h2>
-                        <input type="text" id="txtpermiso" maxlength="100" required >
+                        <h2>Registrar Rol</h2>
+                        <input type="text" id="txtRol" maxlength="100" required >
                     </div>           
                     <section id="btncontenedor"> 
                         <div class="boton">
-                            <button type="button" id="btnRegistrarPermisos" class="button">Registrar </button>
+                            <button type="button" id="btnRegistrarRoles" class="button">Registrar </button>
                         </div>  
                     </section>
                 </form>
@@ -58,14 +59,17 @@
     <!-- SweetAlert -->    
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script src="/validaciones/controlador_rol.js"></script>
 
-    <script src="/servicios/servicio_permisos.js"></script>
-    <script src="/validaciones/controlador_permisos_rol.js"></script>
+
+    <script src="/servicios/servicio_roles.js"></script>
+    <script src="/validaciones/controlador_administrar_roles.js"></script>
+
+    <!-- <script src="/servicios/servicio_permisos.js"></script>
     <script src="/validaciones/controlador_administrar_permisos.js"></script>
 
+    <script src="/validaciones/controlador_permisos_rol.js"></script> -->
 
-
+    <script src="/validaciones/controlador_rol.js"></script>
 
 </body>
 </html>

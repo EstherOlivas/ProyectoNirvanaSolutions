@@ -22,7 +22,7 @@
     <div id="contain">
         <div class="container">
             <h4>Ingresa tus datos</h4>
-            <form class="form" center>
+            <form id="formulario" class="form" center>
                 <div class="contenedor_input">
                     <input class="llenar" type="text" placeholder="Nombre" name="name" id="name" required>
                 </div>
@@ -44,6 +44,9 @@
                 <div class="contenedor_input">
                     <input class="llenar" type="text" placeholder="Dirección" name="address" id="address" required>
                 </div>
+                <div class="contenedor_input" id="divrol">
+                    <select class="llenar" name="rol" id="rol"></select>
+                </div>
 
                 <div class="terms">
                     <label for="TyC">
@@ -62,10 +65,12 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- SweetAlert -->    
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- Sevicios -->
+        <script src="/servicios/servicios_usuarios.js"></script>
+        <script src="/servicios/servicio_roles.js"></script>
     <!-- Validaciones -->
     <script src="/validaciones/controlador_registro.js"></script>
-    <!-- Sevicios -->
-    <script src="/servicios/servicios_usuarios.js"></script>
+
 
 </body>
 </html>
